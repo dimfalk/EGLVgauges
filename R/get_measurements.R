@@ -1,4 +1,4 @@
-#' Get measurements, i.e. water levels or discharge
+#' Get water level or discharge measurements
 #'
 #' @param x character. Station ID.
 #' @param discharge logical. Retrieve water level or discharge data?

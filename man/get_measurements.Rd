@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_measurements.R
 \name{get_measurements}
 \alias{get_measurements}
-\title{Get measurements, i.e. water levels or discharge}
+\title{Get water level or discharge measurements}
 \usage{
 get_measurements(x = NULL, discharge = FALSE)
 }
@@ -15,7 +15,7 @@ get_measurements(x = NULL, discharge = FALSE)
 xts object.
 }
 \description{
-Get measurements, i.e. water levels or discharge
+Get water level or discharge measurements
 }
 \examples{
 get_measurements("10104")

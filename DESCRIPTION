@@ -1,0 +1,26 @@
+Package: EGLVgauges
+Title: R Interface for data acquisition from pegel.eglv.de
+Version: 0.1.0
+Authors@R: 
+    person("Dimitri", "Falk", , "falk.dimitri@eglv.de", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.2.0)
+Imports: 
+    checkmate,
+    dplyr,
+    jsonlite,
+    rvest,
+    sf,
+    stringr,
+    tibble,
+    xts
+Suggests: 
+    covr,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+LazyData: true
+LazyDataCompression: bzip2

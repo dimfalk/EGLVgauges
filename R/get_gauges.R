@@ -9,7 +9,7 @@ get_gauges <- function() {
 
   base_url <- "https://pegel.eglv.de/gauges/"
 
-  x <- jsonlite::fromJSON(base_url)
+  x <- jsonlite::fromJSON(base_url) |> tibble::as_tibble()
 
   gauges <- sf::st_as_sf(x,
                          coords = c("Rechtswert", "Hochwert"),
@@ -51,8 +51,14 @@ get_gauges <- function() {
                                     "waterbody" = "Fluss",
                                     "current_trend" = "Aktueller Trend") |>
     dplyr::select("id", "name", "waterbody", "current_trend",
-                  "has_current_waterlevel", "latest_waterlevel_datetime", "latest_waterlevel_value", "latest_waterlevel_current_alertlevel",
-                  "has_current_discharge",  "latest_discharge_datetime",  "latest_discharge_value",  "latest_discharge_current_alertlevel")
+                  "has_current_waterlevel",
+                  "latest_waterlevel_datetime",
+                  "latest_waterlevel_value",
+                  "latest_waterlevel_current_alertlevel",
+                  "has_current_discharge",
+                  "latest_discharge_datetime",
+                  "latest_discharge_value",
+                  "latest_discharge_current_alertlevel")
 
   gauges
 }

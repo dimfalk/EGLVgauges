@@ -48,9 +48,9 @@ get_gauges <- function() {
   # rename columns, change order
   gauges <- gauges |> dplyr::rename("name" = "Name",
                                     "id" = "Pegel-Nummer",
-                                    "river" = "Fluss",
+                                    "waterbody" = "Fluss",
                                     "current_trend" = "Aktueller Trend") |>
-    dplyr::select("id", "name", "river", "current_trend",
+    dplyr::select("id", "name", "waterbody", "current_trend",
                   "has_current_waterlevel", "latest_waterlevel_datetime", "latest_waterlevel_value", "latest_waterlevel_current_alertlevel",
                   "has_current_discharge",  "latest_discharge_datetime",  "latest_discharge_value",  "latest_discharge_current_alertlevel")
 

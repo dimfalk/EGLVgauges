@@ -1,6 +1,6 @@
 Package: EGLVgauges
 Title: R Interface for data acquisition from pegel.eglv.de
-Version: 0.1.4
+Version: 0.1.5
 Date: 2024-11-27
 Authors@R: 
     person("Dimitri", "Falk", , "falk.dimitri@eglv.de", role = c("aut", "cre"))

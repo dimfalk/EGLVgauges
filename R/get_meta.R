@@ -6,26 +6,20 @@
 #' @export
 #'
 #' @examples
-#' get_meta("10101")
+#' station <- get_gauges() |> dplyr::filter(id == "10103")
+#' get_meta(station)
+#'
+#' stations <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+#' get_meta(stations)
 get_meta <- function(x = NULL) {
 
   # ----------------------------------------------------------------------------
 
   base_url <- "https://pegel.eglv.de/Stammdaten/"
 
-  url <- paste0(base_url, x, "/")
-
-  a <- rvest::read_html(url) |>
-    rvest::html_elements("li") |>
-    rvest::html_text()
-
-  keys <- stringr::str_split_i(a, pattern = ": ", i = 1)
-
-  vals <- stringr::str_split_i(a, pattern = ": ", i = 2)
-
   meta <- data.frame("id" = NA,
                      "name" = NA,
-                     "river" = NA,
+                     "waterbody" = NA,
                      "municipality" = NA,
                      "X" = NA,
                      "Y" = NA,
@@ -33,15 +27,43 @@ get_meta <- function(x = NULL) {
                      "catchment_area" = NA,
                      "level_zero" = NA)
 
-  meta["id"] <- vals[2]
-  meta["name"] <- vals[1]
-  meta["river"] <- vals[3]
-  meta["municipality"] <- vals[4]
-  meta["X"] <- vals[5] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
-  meta["Y"] <- vals[6]  |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
-  meta["river_km"] <- vals[7] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
-  meta["catchment_area"] <- vals[8] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
-  meta["level_zero"] <- vals[9] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
+  # iterate over individual stations
+  ids <- x[["id"]]
 
-  tibble::as_tibble(meta)
+  n <- length(ids)
+
+  for (i in 1:n) {
+
+    url <- paste0(base_url, ids[i], "/")
+
+    a <- rvest::read_html(url) |>
+      rvest::html_elements("li") |>
+      rvest::html_text()
+
+    keys <- stringr::str_split_i(a, pattern = ": ", i = 1)
+
+    vals <- stringr::str_split_i(a, pattern = ": ", i = 2)
+
+    meta["id"] <- vals[2]
+    meta["name"] <- vals[1]
+    meta["waterbody"] <- vals[3]
+    meta["municipality"] <- vals[4]
+    meta["X"] <- vals[5] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
+    meta["Y"] <- vals[6]  |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
+    meta["river_km"] <- vals[7] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
+    meta["catchment_area"] <- vals[8] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
+    meta["level_zero"] <- vals[9] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()
+
+    # concatenate objects
+    if (!exists("meta_all")) {
+
+      meta_all <- tibble::as_tibble(meta)
+
+    } else {
+
+      meta_all <- rbind(meta_all, meta)
+    }
+  }
+
+  meta_all
 }

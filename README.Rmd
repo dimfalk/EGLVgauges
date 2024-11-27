@@ -16,39 +16,47 @@ knitr::opts_chunk$set(
 # EGLVgauges
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-The goal of EGLVgauges is to ...
+vg250 aims to grant easy access to EGLV gauge data published at pegel.eglv.de.
 
 ## Installation
 
-You can install the development version of EGLVgauges like so:
+You can install the development version of EGLVgauges with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("dimfalk/EGLVgauges")
 ```
 
-## Example
+## Basic examples
 
-This is a basic example which shows you how to solve a common problem:
+Just a few quick insights on the use of this package:
 
 ```{r example}
 library(EGLVgauges)
-## basic example code
+
+# fetch all available gauges
+gauges <- get_gauges()
+gauges
+
+# eventually filter the dataset to the ones you're interested in
+gauge <- gauges |> dplyr::filter(id == "10119")
+gauge
+
+
+
+# fetch waterlevel measurements
+meas <- get_measurements(gauge)[[1]]
+meas
+
+class(meas)
+
+plot(meas, main = "10119 Adenauerallee", ylab = "Water level [cm]")
+
+
+
+# fetch metadata available
+get_meta(gauge)
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.

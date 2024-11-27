@@ -15,6 +15,8 @@ get_gauges <- function() {
                          coords = c("Rechtswert", "Hochwert"),
                          crs = "epsg:25832")
 
+
+
   # unnest water level
   gauges[["latest_waterlevel_datetime"]] <- gauges[["latest_waterlevel"]][["Datum"]] |>
     strptime(format = "%d.%m.%Y %H:%M", tz = "etc/GMT-1") |>
@@ -24,6 +26,8 @@ get_gauges <- function() {
     as.numeric()
 
   gauges[["latest_waterlevel_current_alertlevel"]] <- gauges[["latest_waterlevel"]][["Aktuelle Warnstufe"]]
+
+
 
   # unnest discharge
   gauges[["latest_discharge_datetime"]] <- gauges[["latest_discharge"]][["Datum"]] |>
@@ -37,7 +41,18 @@ get_gauges <- function() {
   gauges[["latest_discharge_current_alertlevel"]] <- gauges[["latest_discharge"]][["Aktuelle Warnstufe"]]
 
 
+
+  # drop columns
   gauges <- gauges |> dplyr::select(-latest_waterlevel, -latest_discharge)
+
+  # rename columns, change order
+  gauges <- gauges |> dplyr::rename("name" = "Name",
+                                    "id" = "Pegel-Nummer",
+                                    "river" = "Fluss",
+                                    "current_trend" = "Aktueller Trend") |>
+    dplyr::select("id", "name", "river", "current_trend",
+                  "has_current_waterlevel", "latest_waterlevel_datetime", "latest_waterlevel_value", "latest_waterlevel_current_alertlevel",
+                  "has_current_discharge",  "latest_discharge_datetime",  "latest_discharge_value",  "latest_discharge_current_alertlevel")
 
   gauges
 }

@@ -6,11 +6,11 @@
 #' @export
 #'
 #' @examples
-#' station <- get_gauges() |> dplyr::filter(id == "10103")
-#' get_meta(station)
+#' gauge <- get_gauges() |> dplyr::filter(id == "10103")
+#' get_meta(gauge)
 #'
-#' stations <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
-#' get_meta(stations)
+#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+#' get_meta(gauges)
 get_meta <- function(x = NULL) {
 
   # ----------------------------------------------------------------------------
@@ -63,6 +63,8 @@ get_meta <- function(x = NULL) {
 
       meta_all <- rbind(meta_all, meta)
     }
+
+    Sys.sleep(0.5)
   }
 
   meta_all

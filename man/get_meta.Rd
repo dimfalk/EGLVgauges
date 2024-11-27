@@ -16,5 +16,9 @@ Tibble.
 Get gauge metadata
 }
 \examples{
-get_meta("10101")
+gauge <- get_gauges() |> dplyr::filter(id == "10103")
+get_meta(gauge)
+
+gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+get_meta(gauges)
 }

@@ -7,14 +7,14 @@
 #' @export
 #'
 #' @examples
-#' station <- get_gauges() |> dplyr::filter(id == "10103")
+#' gauge <- get_gauges() |> dplyr::filter(id == "10103")
 #'
-#' get_measurements(station)
-#' get_measurements(station, discharge = TRUE)
+#' get_measurements(gauge)
+#' get_measurements(gauge, discharge = TRUE)
 #'
-#' stations <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
 #'
-#' get_measurements(stations)
+#' get_measurements(gauges)
 get_measurements <- function(x = NULL,
                              discharge = FALSE) {
 
@@ -53,6 +53,8 @@ get_measurements <- function(x = NULL,
                      order.by = strptime(raw[, 1], format = "%Y-%m-%dT%H:%M:%SZ", tz = "etc/GMT-1"))
 
     xtslist[[i]] <- meas
+
+    Sys.sleep(0.5)
   }
 
   xtslist

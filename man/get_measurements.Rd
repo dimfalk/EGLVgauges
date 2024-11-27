@@ -7,18 +7,23 @@
 get_measurements(x = NULL, discharge = FALSE)
 }
 \arguments{
-\item{x}{character. Station ID.}
+\item{x}{Tibble as provided by \code{get_gauges()}.}
 
 \item{discharge}{logical. Retrieve water level or discharge data?}
 }
 \value{
-xts object.
+List of xts objects.
 }
 \description{
 Get water level or discharge measurements
 }
 \examples{
-get_measurements("10104")
+gauge <- get_gauges() |> dplyr::filter(id == "10103")
 
-get_measurements("10103", discharge = TRUE)
+get_measurements(gauge)
+get_measurements(gauge, discharge = TRUE)
+
+gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+
+get_measurements(gauges)
 }

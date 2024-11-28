@@ -35,14 +35,16 @@ get_measurements <- function(x = NULL,
 
   base_url <- "https://pegel.eglv.de/measurements/"
 
-  # set relevant unit
-  if (discharge == FALSE) {
+  par <- ifelse(discharge == FALSE, "waterlevel", "discharge")
 
-    unit <- "Wasserstand"
+  # set relevant unit
+  if (par == "discharge") {
+
+    unit <- "Durchfluss"
 
   } else {
 
-    unit <- "Durchfluss"
+    unit <- "Wasserstand"
   }
 
   # iterate over individual stations
@@ -65,7 +67,34 @@ get_measurements <- function(x = NULL,
     meas <- xts::xts(as.numeric(raw[, 2]),
                      order.by = strptime(raw[, 1], format = "%Y-%m-%dT%H:%M:%SZ", tz = "etc/GMT-1"))
 
-    names(meas) <- ifelse(discharge == FALSE, "waterlevel", "discharge")
+    # fix name
+    names(meas) <- par
+
+    # add meta data
+    meta <- get_meta(x[i, ])
+
+    attr(meas, "STAT_ID") <- meta |> dplyr::pull("id")
+    attr(meas, "STAT_NAME") <- meta |> dplyr::pull("name")
+
+    attr(meas, "X") <- meta |> dplyr::pull("X")
+    attr(meas, "Y") <- meta |> dplyr::pull("Y")
+    attr(meas, "Z") <- meta |> dplyr::pull("level_zero")
+    attr(meas, "CRS_EPSG") <- "25832"
+    attr(meas, "HRS_EPSG") <- "7873"
+    attr(meas, "TZONE") <- "etc/GMT-1"
+
+    attr(meas, "PARAMETER") <- par
+
+    attr(meas, "TS_START") <- xts::first(meas) |> zoo::index()
+    attr(meas, "TS_END") <- xts::last(meas) |> zoo::index()
+    attr(meas, "TS_DEFLATE") <- FALSE
+    attr(meas, "TS_TYPE") <- "measurement"
+
+    attr(meas, "MEAS_INTERVALTYPE") <- TRUE
+    attr(meas, "MEAS_BLOCKING") <- "right"
+    attr(meas, "MEAS_RESOLUTION") <- 5
+    attr(meas, "MEAS_UNIT") <- ifelse(discharge == FALSE, "cm", "m3/s")
+    attr(meas, "MEAS_STATEMENT") <- "mean"
 
     xtslist[[i]] <- meas
 

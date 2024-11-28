@@ -65,10 +65,14 @@ get_measurements <- function(x = NULL,
     meas <- xts::xts(as.numeric(raw[, 2]),
                      order.by = strptime(raw[, 1], format = "%Y-%m-%dT%H:%M:%SZ", tz = "etc/GMT-1"))
 
+    names(meas) <- ifelse(discharge == FALSE, "waterlevel", "discharge")
+
     xtslist[[i]] <- meas
 
     Sys.sleep(0.5)
   }
+
+  names(xtslist) <- ids
 
   xtslist
 }

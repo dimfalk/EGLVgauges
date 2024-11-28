@@ -5,6 +5,8 @@
 #' @return Tibble.
 #' @export
 #'
+#' @seealso [get_gauges()]
+#'
 #' @examples
 #' gauge <- get_gauges() |> dplyr::filter(id == "10103")
 #' get_meta(gauge)
@@ -12,6 +14,14 @@
 #' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
 #' get_meta(gauges)
 get_meta <- function(x = NULL) {
+
+  # debugging ------------------------------------------------------------------
+
+  # x <- get_gauges() |> dplyr::filter(id == "10103")
+
+  # check arguments ------------------------------------------------------------
+
+  checkmate::assert_tibble(x)
 
   # ----------------------------------------------------------------------------
 

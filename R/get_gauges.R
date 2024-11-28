@@ -7,6 +7,12 @@
 #' get_gauges()
 get_gauges <- function() {
 
+  # debugging ------------------------------------------------------------------
+
+  # check arguments ------------------------------------------------------------
+
+  # ----------------------------------------------------------------------------
+
   base_url <- "https://pegel.eglv.de/gauges/"
 
   x <- jsonlite::fromJSON(base_url) |> tibble::as_tibble()

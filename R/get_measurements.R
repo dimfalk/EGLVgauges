@@ -6,6 +6,8 @@
 #' @return List of xts objects.
 #' @export
 #'
+#' @seealso [get_gauges()]
+#'
 #' @examples
 #' gauge <- get_gauges() |> dplyr::filter(id == "10103")
 #'
@@ -17,6 +19,17 @@
 #' get_measurements(gauges)
 get_measurements <- function(x = NULL,
                              discharge = FALSE) {
+
+  # debugging ------------------------------------------------------------------
+
+  # x <- get_gauges() |> dplyr::filter(id == "10103")
+  # discharge <- FALSE
+
+  # check arguments ------------------------------------------------------------
+
+  checkmate::assert_tibble(x)
+
+  checkmate::assert_logical(discharge)
 
   # ----------------------------------------------------------------------------
 

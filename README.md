@@ -74,7 +74,7 @@ gauge
 
 
 
-# fetch waterlevel measurements
+# fetch water level measurements
 meas <- get_measurements(gauge)[[1]]
 meas
 #> Warning: object timezone ('etc/GMT-1') is different from system timezone ('')
@@ -92,7 +92,6 @@ meas
 #> 2024-09-30 12:25:00         80
 #> 2024-09-30 12:30:00         80
 #>                 ...           
-#> 2024-11-28 10:50:00        101
 #> 2024-11-28 10:55:00        101
 #> 2024-11-28 11:00:00        100
 #> 2024-11-28 11:05:00        100
@@ -102,6 +101,7 @@ meas
 #> 2024-11-28 11:25:00        100
 #> 2024-11-28 11:30:00        100
 #> 2024-11-28 11:35:00         99
+#> 2024-11-28 11:40:00         99
 
 class(meas)
 #> [1] "xts" "zoo"

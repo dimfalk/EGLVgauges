@@ -47,7 +47,7 @@ gauge
 
 
 
-# fetch waterlevel measurements
+# fetch water level measurements
 meas <- get_measurements(gauge)[[1]]
 meas
 

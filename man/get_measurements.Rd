@@ -27,3 +27,6 @@ gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
 
 get_measurements(gauges)
 }
+\seealso{
+\code{\link[=get_gauges]{get_gauges()}}
+}

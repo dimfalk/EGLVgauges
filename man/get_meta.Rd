@@ -22,3 +22,6 @@ get_meta(gauge)
 gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
 get_meta(gauges)
 }
+\seealso{
+\code{\link[=get_gauges]{get_gauges()}}
+}

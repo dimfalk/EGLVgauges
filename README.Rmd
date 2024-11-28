@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-vg250 aims to grant easy access to EGLV gauge data published at pegel.eglv.de.
+EGLVgauges aims to grant easy access to EGLV gauge data published at [pegel.eglv.de](https://pegel.eglv.de/).
 
 ## Installation
 

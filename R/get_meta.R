@@ -11,7 +11,7 @@
 #' gauge <- get_gauges() |> dplyr::filter(id == "10103")
 #' get_meta(gauge)
 #'
-#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 #' get_meta(gauges)
 get_meta <- function(x = NULL) {
 

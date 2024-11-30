@@ -23,7 +23,7 @@ gauge <- get_gauges() |> dplyr::filter(id == "10103")
 get_measurements(gauge)
 get_measurements(gauge, discharge = TRUE)
 
-gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 
 get_measurements(gauges)
 }

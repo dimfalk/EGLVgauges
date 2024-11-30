@@ -5,6 +5,12 @@ test_that("Output class is as expected.", {
   meta <- get_meta(x)
 
   expect_s3_class(meta, c("tbl_df", "tbl", "data.frame"))
+
+  y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+
+  meta <- get_meta(y)
+
+  expect_s3_class(meta, c("tbl_df", "tbl", "data.frame"))
 })
 
 test_that("Dimensions are as expected.", {
@@ -14,6 +20,12 @@ test_that("Dimensions are as expected.", {
   meta <- get_meta(x)
 
   expect_equal(dim(meta), c(1, 9))
+
+  y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+
+  meta <- get_meta(y)
+
+  expect_equal(dim(meta), c(2, 9))
 })
 
 test_that("Column names are as expected.", {

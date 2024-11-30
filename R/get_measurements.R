@@ -14,7 +14,7 @@
 #' get_measurements(gauge)
 #' get_measurements(gauge, discharge = TRUE)
 #'
-#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hüller Bach")
+#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 #'
 #' get_measurements(gauges)
 get_measurements <- function(x = NULL,

@@ -16,8 +16,8 @@ knitr::opts_chunk$set(
 # EGLVgauges
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml)
+[![Codecov](https://codecov.io/gh/dimfalk/EGLVgauges/branch/main/graph/badge.svg)](https://codecov.io/gh/dimfalk/EGLVgauges)
 <!-- badges: end -->
 
 EGLVgauges aims to grant easy access to EGLV gauge data published at [pegel.eglv.de](https://pegel.eglv.de/).

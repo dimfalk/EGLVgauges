@@ -4,6 +4,9 @@
 # EGLVgauges
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml)
+[![Codecov](https://codecov.io/gh/dimfalk/EGLVgauges/branch/main/graph/badge.svg)](https://codecov.io/gh/dimfalk/EGLVgauges)
 <!-- badges: end -->
 
 EGLVgauges aims to grant easy access to EGLV gauge data published at
@@ -43,7 +46,7 @@ gauges
 #>  4 12036 HRB Borbecker Mühlenbac… Borbecke… Keine Daten   TRUE                  
 #>  5 10085 Nöggerathstraße          Borbecke… Keine Daten   TRUE                  
 #>  6 10140 BOT Gungstraße, Fußgäng… Boye      Keine Daten   TRUE                  
-#>  7 10141 Braukstraße, B224        Boye      Keine Daten   TRUE                  
+#>  7 10141 Braukstraße, B224        Boye      Keine Daten   FALSE                 
 #>  8 10139 GLA Brücke Welheimer St… Boye      Keine Daten   TRUE                  
 #>  9 22049 An den Höfen, Hünxe (HR… Bruckhau… Kein Trend    TRUE                  
 #> 10 21119 HÜN HRB Zur alten Mühle… Bruckhau… Keine Daten   TRUE                  
@@ -81,27 +84,27 @@ meas
 #>   NOTE: set 'options(xts_check_TZ = FALSE)' to disable this warning
 #>     This note is displayed once per session
 #>                     waterlevel
-#> 2024-09-30 11:45:00         81
-#> 2024-09-30 11:50:00         81
-#> 2024-09-30 11:55:00         81
-#> 2024-09-30 12:00:00         81
-#> 2024-09-30 12:05:00         81
-#> 2024-09-30 12:10:00         81
-#> 2024-09-30 12:15:00         81
-#> 2024-09-30 12:20:00         81
-#> 2024-09-30 12:25:00         80
-#> 2024-09-30 12:30:00         80
+#> 2024-10-09 22:35:00        246
+#> 2024-10-09 22:40:00        251
+#> 2024-10-09 22:45:00        258
+#> 2024-10-09 22:50:00        264
+#> 2024-10-09 22:55:00        268
+#> 2024-10-09 23:00:00        275
+#> 2024-10-09 23:05:00        279
+#> 2024-10-09 23:10:00        286
+#> 2024-10-09 23:15:00        292
+#> 2024-10-09 23:20:00        296
 #>                 ...           
-#> 2024-11-28 10:55:00        101
-#> 2024-11-28 11:00:00        100
-#> 2024-11-28 11:05:00        100
-#> 2024-11-28 11:10:00        100
-#> 2024-11-28 11:15:00        100
-#> 2024-11-28 11:20:00        100
-#> 2024-11-28 11:25:00        100
-#> 2024-11-28 11:30:00        100
-#> 2024-11-28 11:35:00         99
-#> 2024-11-28 11:40:00         99
+#> 2024-12-07 21:45:00        114
+#> 2024-12-07 21:50:00        114
+#> 2024-12-07 21:55:00        114
+#> 2024-12-07 22:00:00        114
+#> 2024-12-07 22:05:00        114
+#> 2024-12-07 22:10:00        114
+#> 2024-12-07 22:15:00        113
+#> 2024-12-07 22:20:00        113
+#> 2024-12-07 22:25:00        113
+#> 2024-12-07 22:30:00        113
 
 class(meas)
 #> [1] "xts" "zoo"

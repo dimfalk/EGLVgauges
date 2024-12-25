@@ -35,16 +35,14 @@ get_measurements <- function(x = NULL,
 
   base_url <- "https://pegel.eglv.de/measurements/"
 
-  par <- ifelse(discharge == FALSE, "waterlevel", "discharge")
+  # set relevant parameter
+  if (discharge == TRUE) {
 
-  # set relevant unit
-  if (par == "discharge") {
-
-    unit <- "Durchfluss"
+    par <- "Durchfluss"
 
   } else {
 
-    unit <- "Wasserstand"
+    par <- "Wasserstand"
   }
 
   # iterate over individual stations
@@ -56,16 +54,22 @@ get_measurements <- function(x = NULL,
 
   for (i in 1:n) {
 
-    url <- paste0(base_url,
-                  "?serial=",
-                  ids[i],
-                  "&unit_name=",
-                  unit)
+    # query definition
+    query <- list(serial = ids[i],
+                  unit_name = par)
 
-    raw <- jsonlite::fromJSON(url)[["gauge_measurements"]]
+    # send request
+    r_raw <- httr::GET(url = base_url, query = query)
 
-    meas <- xts::xts(as.numeric(raw[, 2]),
-                     order.by = strptime(raw[, 1], format = "%Y-%m-%dT%H:%M:%SZ", tz = "etc/GMT-1"))
+    # parse response: raw to json
+    r_json <- httr::content(r_raw, "text", encoding = "UTF-8")
+
+    r_mat <- jsonlite::fromJSON(r_json)[["gauge_measurements"]]
+
+    meas <- xts::xts(as.numeric(r_mat[, 2]),
+                     order.by = strptime(r_mat[, 1],
+                                         format = "%Y-%m-%dT%H:%M:%SZ",
+                                         tz = "etc/GMT-1"))
 
     # fix name
     names(meas) <- par

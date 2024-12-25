@@ -15,11 +15,16 @@ get_gauges <- function() {
 
   base_url <- "https://pegel.eglv.de/gauges/"
 
-  x <- jsonlite::fromJSON(base_url) |> tibble::as_tibble()
+  # send request
+  r_raw <- httr::GET(url = base_url)
 
-  gauges <- sf::st_as_sf(x,
-                         coords = c("Rechtswert", "Hochwert"),
-                         crs = "epsg:25832")
+  # parse response: raw to json
+  r_json <- httr::content(r_raw, "text", encoding = "UTF-8")
+
+  gauges <- jsonlite::fromJSON(r_json) |>
+    tibble::as_tibble() |>
+    sf::st_as_sf(coords = c("Rechtswert", "Hochwert"),
+                 crs = "epsg:25832")
 
 
 

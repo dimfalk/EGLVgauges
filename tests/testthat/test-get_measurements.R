@@ -35,11 +35,11 @@ test_that("Attributes are as expected.", {
 
   expect_equal(attr(meas_1[[1]], "STAT_ID"), "10103")
 
-  expect_equal(attr(meas_1[[1]], "PARAMETER"), "waterlevel")
+  expect_equal(attr(meas_1[[1]], "PARAMETER"), "Wasserstand")
 
   meas_2 <- get_measurements(x, discharge = TRUE)
 
   expect_equal(attr(meas_2[[1]], "STAT_ID"), "10103")
 
-  expect_equal(attr(meas_2[[1]], "PARAMETER"), "discharge")
+  expect_equal(attr(meas_2[[1]], "PARAMETER"), "Durchfluss")
 })

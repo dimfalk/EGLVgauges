@@ -1,0 +1,2242 @@
+[
+    {
+        "Name": "Econova Allee",
+        "Pegel-Nummer": "10104",
+        "Fluss": "Berne",
+        "Rechtswert": 357861.99,
+        "Hochwert": 5706886.25,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 28,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "22.12.2024 16:20",
+            "Wert": 0.34,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "E Posener Straße (neu)",
+        "Pegel-Nummer": "10135",
+        "Fluss": "Borbecker Mühlenbach",
+        "Rechtswert": 357919.9999999999,
+        "Hochwert": 5701285.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 29,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Borbecker MB, Ablauf, unterhalb Bergmühle",
+        "Pegel-Nummer": "11038",
+        "Fluss": "Borbecker Mühlenbach",
+        "Rechtswert": 359211.28,
+        "Hochwert": 5704509.17,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 46,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Borbecker Mühlenbach, Beckenpegel, Staubauwerk",
+        "Pegel-Nummer": "12036",
+        "Fluss": "Borbecker Mühlenbach",
+        "Rechtswert": 359105.96,
+        "Hochwert": 5704368.76,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 41,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Nöggerathstraße",
+        "Pegel-Nummer": "10085",
+        "Fluss": "Borbecker Mühlenbach",
+        "Rechtswert": 358016.02,
+        "Hochwert": 5702672.36,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 24,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "BOT Gungstraße, Fußgängerbrücke",
+        "Pegel-Nummer": "10140",
+        "Fluss": "Boye",
+        "Rechtswert": 360911.0,
+        "Hochwert": 5710050.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 55,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Braukstraße, B224",
+        "Pegel-Nummer": "10141",
+        "Fluss": "Boye",
+        "Rechtswert": 360660.5200000001,
+        "Hochwert": 5709758.349999999,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "06.12.2024 18:20",
+            "Wert": 15,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": false,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "GLA Brücke Welheimer Straße",
+        "Pegel-Nummer": "10139",
+        "Fluss": "Boye",
+        "Rechtswert": 360241.0,
+        "Hochwert": 5712287.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 50,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "An den Höfen, Hünxe (HRB)",
+        "Pegel-Nummer": "22049",
+        "Fluss": "Bruckhauser Mühlenbach",
+        "Rechtswert": 344220.38,
+        "Hochwert": 5718506.55,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 55,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HÜN HRB Zur alten Mühle, Ablauf",
+        "Pegel-Nummer": "21119",
+        "Fluss": "Bruckhauser Mühlenbach",
+        "Rechtswert": 344600.0,
+        "Hochwert": 5719239.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 20,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Zur alten Mühle, HRB Beckenpegel",
+        "Pegel-Nummer": "22119",
+        "Fluss": "Bruckhauser Mühlenbach",
+        "Rechtswert": 345347.65,
+        "Hochwert": 5720138.12,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 90,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "RRB Brüggerbach, Ulfkotter Strasse",
+        "Pegel-Nummer": "22101",
+        "Fluss": "Brüggerbach",
+        "Rechtswert": 363892.4,
+        "Hochwert": 5719356.86,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 57,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Bahnbrücke, Zum Gutacker",
+        "Pegel-Nummer": "20030",
+        "Fluss": "Dattelner Mühlenbach",
+        "Rechtswert": 382348.01,
+        "Hochwert": 5722811.06,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 42,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 0.2,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "HRB Dattelner Mühlenbach, Becken neu",
+        "Pegel-Nummer": "22047",
+        "Fluss": "Dattelner Mühlenbach",
+        "Rechtswert": 384120.89,
+        "Hochwert": 5723164.7,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 53,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Natroper Weg, Brücke",
+        "Pegel-Nummer": "20032",
+        "Fluss": "Dattelner Mühlenbach",
+        "Rechtswert": 386835.73,
+        "Hochwert": 5725389.96,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 53,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Oberhalb Durchlass Park",
+        "Pegel-Nummer": "23043",
+        "Fluss": "Dattelner Mühlenbach",
+        "Rechtswert": 384483.73,
+        "Hochwert": 5723139.48,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 47,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Wiesenstraße",
+        "Pegel-Nummer": "20043",
+        "Fluss": "Dattelner Mühlenbach",
+        "Rechtswert": 384530.95,
+        "Hochwert": 5723139.12,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 49,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Westring in Castrop-Rauxel Bladenhorst",
+        "Pegel-Nummer": "10042",
+        "Fluss": "Deininghauser Bach",
+        "Rechtswert": 380848.75,
+        "Hochwert": 5714375.77,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 48,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HER Brücke Am Berg",
+        "Pegel-Nummer": "10128",
+        "Fluss": "Dorneburger Mühlenbach",
+        "Rechtswert": 371587.0,
+        "Hochwert": 5710328.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 29,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Sonnenblumenweg, Kleingartenanlage",
+        "Pegel-Nummer": "10109",
+        "Fluss": "Dorneburger Mühlenbach",
+        "Rechtswert": 374352.55999999994,
+        "Hochwert": 5709001.48,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 30,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "21.12.2024 08:20",
+            "Wert": 0.03,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Ablauf Phönixsee, Brücke zum Magazin",
+        "Pegel-Nummer": "11108",
+        "Fluss": "Emscher",
+        "Rechtswert": 396115.02,
+        "Hochwert": 5705766.47,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 21,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 0.17,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Adelenstraße",
+        "Pegel-Nummer": "10107",
+        "Fluss": "Emscher",
+        "Rechtswert": 397996.77,
+        "Hochwert": 5705208.28,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 27,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Adenauerallee",
+        "Pegel-Nummer": "10119",
+        "Fluss": "Emscher",
+        "Rechtswert": 367059.81,
+        "Hochwert": 5712146.53,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 93,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Am Stadthafen",
+        "Pegel-Nummer": "10124",
+        "Fluss": "Emscher",
+        "Rechtswert": 375870.0,
+        "Hochwert": 5713706.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 100,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Bahnstraße, Ultraschallanlage",
+        "Pegel-Nummer": "10103",
+        "Fluss": "Emscher",
+        "Rechtswert": 346978.85999999987,
+        "Hochwert": 5710823.759999999,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:10",
+            "Wert": 282,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 10,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Brücke Konrad-Adenauer-Straße",
+        "Pegel-Nummer": "10099",
+        "Fluss": "Emscher",
+        "Rechtswert": 341977.69,
+        "Hochwert": 5714253.85,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 251,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 18,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "DIN Hagelstraße",
+        "Pegel-Nummer": "16137",
+        "Fluss": "Emscher",
+        "Rechtswert": 340436.70306172385,
+        "Hochwert": 5714757.607140264,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 213,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 16,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "DIN Heerstraße",
+        "Pegel-Nummer": "16136",
+        "Fluss": "Emscher",
+        "Rechtswert": 341086.0,
+        "Hochwert": 5714642.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 269,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 16,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "DO Brücke Sölder Straße",
+        "Pegel-Nummer": "10132",
+        "Fluss": "Emscher",
+        "Rechtswert": 401965.0,
+        "Hochwert": 5706313.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 29,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "DO Fußgängerbrücke Schweizer Allee",
+        "Pegel-Nummer": "10134",
+        "Fluss": "Emscher",
+        "Rechtswert": 400068.0,
+        "Hochwert": 5705518.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 34,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "DO HRB Ellinghausen Ablauf, Brücke Gut Königsmühle",
+        "Pegel-Nummer": "11133",
+        "Fluss": "Emscher",
+        "Rechtswert": 389956.0,
+        "Hochwert": 5713681.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 112,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Dortmund-Dorstfeld, Brücke Dorstfelder Hellweg",
+        "Pegel-Nummer": "10113",
+        "Fluss": "Emscher",
+        "Rechtswert": 390865.46,
+        "Hochwert": 5707962.35,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 27,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Dortmund-Mengede",
+        "Pegel-Nummer": "10026",
+        "Fluss": "Emscher",
+        "Rechtswert": 386758.37,
+        "Hochwert": 5715273.9,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 136,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Essener Straße",
+        "Pegel-Nummer": "10101",
+        "Fluss": "Emscher",
+        "Rechtswert": 356764.89,
+        "Hochwert": 5707821.88,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 197,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Mengede, Ablaufpegel, JVA Meisenhof",
+        "Pegel-Nummer": "10115",
+        "Fluss": "Emscher",
+        "Rechtswert": 385727.56,
+        "Hochwert": 5716556.91,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 21:45",
+            "Wert": 103,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": false,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Mengede, Beckenpegel, oh. Staubauwerk",
+        "Pegel-Nummer": "12114",
+        "Fluss": "Emscher",
+        "Rechtswert": 386100.65,
+        "Hochwert": 5716042.32,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 161,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Nagelpötchen, Beckenpegel",
+        "Pegel-Nummer": "12111",
+        "Fluss": "Emscher",
+        "Rechtswert": 398569.21,
+        "Hochwert": 5705864.39,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 13,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Vieselerhofstraße, Beckenpegel",
+        "Pegel-Nummer": "12112",
+        "Fluss": "Emscher",
+        "Rechtswert": 400724.64,
+        "Hochwert": 5705786.7,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 6,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Phönixsee, Beckenpegel",
+        "Pegel-Nummer": "12108",
+        "Fluss": "Emscher",
+        "Rechtswert": 396801.49,
+        "Hochwert": 5705232.75,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 466,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Strickerstraße",
+        "Pegel-Nummer": "11110",
+        "Fluss": "Emscher",
+        "Rechtswert": 399827.52,
+        "Hochwert": 5705477.09,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 29,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Goldhammer Bach, Beckenpegel",
+        "Pegel-Nummer": "12118",
+        "Fluss": "Goldhammer Bach",
+        "Rechtswert": 372346.29840974894,
+        "Hochwert": 5706428.723022181,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 35,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Am Freibad, Rosenstraße",
+        "Pegel-Nummer": "20017",
+        "Fluss": "Hammbach",
+        "Rechtswert": 359450.72,
+        "Hochwert": 5727825.69,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 31,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Am Strandbad",
+        "Pegel-Nummer": "20020",
+        "Fluss": "Hammbach",
+        "Rechtswert": 359350.29,
+        "Hochwert": 5727000.84,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 83,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Polsumer Straße",
+        "Pegel-Nummer": "20114",
+        "Fluss": "Hasseler Mühlenbach",
+        "Rechtswert": 364883.5,
+        "Hochwert": 5720398.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 34,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Kortelbach, Ablaufpegel",
+        "Pegel-Nummer": "21109",
+        "Fluss": "Heerener Mühlenbach",
+        "Rechtswert": 411072.57,
+        "Hochwert": 5713980.0,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 53,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Kortelbach, Beckenpegel",
+        "Pegel-Nummer": "22109",
+        "Fluss": "Heerener Mühlenbach",
+        "Rechtswert": 411139.54,
+        "Hochwert": 5713937.57,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 54,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Feldstraße",
+        "Pegel-Nummer": "10122",
+        "Fluss": "Hellbach",
+        "Rechtswert": 375525.3,
+        "Hochwert": 5714534.52,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 29,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Herringer Bach, Becken",
+        "Pegel-Nummer": "22081",
+        "Fluss": "Herringer Bach",
+        "Rechtswert": 415266.07,
+        "Hochwert": 5722966.7,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 11,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Oberhalb Drosselbauwerk",
+        "Pegel-Nummer": "23083",
+        "Fluss": "Herringer Bach",
+        "Rechtswert": 414838.9,
+        "Hochwert": 5723278.93,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 58,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Unterhalb Drosselbauwerk",
+        "Pegel-Nummer": "24083",
+        "Fluss": "Herringer Bach",
+        "Rechtswert": 414728.15,
+        "Hochwert": 5723337.92,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 47,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "DO Brücke Hörder Hafenstraße",
+        "Pegel-Nummer": "10131",
+        "Fluss": "Hörder Bach",
+        "Rechtswert": 396132.9999999998,
+        "Hochwert": 5705590.999999999,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 34,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "GE-Brücke Reckfeldstraße",
+        "Pegel-Nummer": "10127",
+        "Fluss": "Hüller Bach",
+        "Rechtswert": 370124.0,
+        "Hochwert": 5711413.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 15,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Herne-Röhlinghausen, Ablauf",
+        "Pegel-Nummer": "11030",
+        "Fluss": "Hüller Bach",
+        "Rechtswert": 371509.9699999998,
+        "Hochwert": 5708072.039999996,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 62,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Herne-Röhlinghausen, Becken",
+        "Pegel-Nummer": "12030",
+        "Fluss": "Hüller Bach",
+        "Rechtswert": 371473.7799999999,
+        "Hochwert": 5707899.889999997,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 67,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Herne-Röhlinghausen, Zulauf",
+        "Pegel-Nummer": "10030",
+        "Fluss": "Hüller Bach",
+        "Rechtswert": 371610.04,
+        "Hochwert": 5707625.82,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 50,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Willy-Brandt-Allee, B 226",
+        "Pegel-Nummer": "10047",
+        "Fluss": "Hüller Bach",
+        "Rechtswert": 369343.54,
+        "Hochwert": 5712520.34,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 33,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Do-Scharnhorst, Ablauf",
+        "Pegel-Nummer": "21100",
+        "Fluss": "Körne",
+        "Rechtswert": 398504.19999999995,
+        "Hochwert": 5710627.85,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 79,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 0.52,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "HRB Scharnhorst, Becken",
+        "Pegel-Nummer": "22100",
+        "Fluss": "Körne",
+        "Rechtswert": 398066.96,
+        "Hochwert": 5710714.42,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 194,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Scharnhorst, Zulauf",
+        "Pegel-Nummer": "20100",
+        "Fluss": "Körne",
+        "Rechtswert": 398107.61,
+        "Hochwert": 5710635.79,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 58,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HER Schachtstraße",
+        "Pegel-Nummer": "10130",
+        "Fluss": "Landwehrbach",
+        "Rechtswert": 378264.0,
+        "Hochwert": 5713367.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 32,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Provisorischer Beckenpegel, HRB Landwehrbach",
+        "Pegel-Nummer": "10071",
+        "Fluss": "Landwehrbach",
+        "Rechtswert": 379763.58,
+        "Hochwert": 5713701.14,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 66,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Westring in Castrop-Rauxel, unterhalb SKU",
+        "Pegel-Nummer": "10020",
+        "Fluss": "Landwehrbach",
+        "Rechtswert": 380407.74,
+        "Hochwert": 5714113.77,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 13,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "An der Rauschenburg, (Vinnum neu)",
+        "Pegel-Nummer": "20122",
+        "Fluss": "Lippe",
+        "Rechtswert": 386873.94,
+        "Hochwert": 5726729.88,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 375,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Dorsten, Borkener Straße",
+        "Pegel-Nummer": "20004",
+        "Fluss": "Lippe",
+        "Rechtswert": 359219.31999999995,
+        "Hochwert": 5726150.019999999,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 638,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 101,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Fusternberg",
+        "Pegel-Nummer": "20001",
+        "Fluss": "Lippe",
+        "Rechtswert": 336928.95,
+        "Hochwert": 5724958.03,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 363,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Haltern, Recklinghäuser Straße",
+        "Pegel-Nummer": "28085",
+        "Fluss": "Lippe",
+        "Rechtswert": 374759.1318748852,
+        "Hochwert": 5732629.757913659,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 329,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HAM Radbodstraße",
+        "Pegel-Nummer": "20012",
+        "Fluss": "Lippe",
+        "Rechtswert": 415331.94,
+        "Hochwert": 5726314.029999999,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 350,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 56,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Heintroper Straße, Brücke B475",
+        "Pegel-Nummer": "20084",
+        "Fluss": "Lippe",
+        "Rechtswert": 433190.95,
+        "Hochwert": 5724138.4,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 357,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Krudenburg",
+        "Pegel-Nummer": "20002",
+        "Fluss": "Lippe",
+        "Rechtswert": 344872.26,
+        "Hochwert": 5724536.76,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 230,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Lippestraße, Klg. Selm-Bork",
+        "Pegel-Nummer": "20045",
+        "Fluss": "Lippe",
+        "Rechtswert": 392703.18999999994,
+        "Hochwert": 5723708.929999998,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 252,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Lünen-Beckinghausen / Wehr OP",
+        "Pegel-Nummer": "23009",
+        "Fluss": "Lippe",
+        "Rechtswert": 400223.38,
+        "Hochwert": 5719451.4,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:10",
+            "Wert": 398,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Lünen-Beckinghausen, Wehr UP",
+        "Pegel-Nummer": "24009",
+        "Fluss": "Lippe",
+        "Rechtswert": 400207.47,
+        "Hochwert": 5719438.5,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:10",
+            "Wert": 261,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Lünen, Graf-Adolf-Straße",
+        "Pegel-Nummer": "20008",
+        "Fluss": "Lippe",
+        "Rechtswert": 397617.1,
+        "Hochwert": 5719308.8,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 355,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Rünthe, Kamener Straße, B 233",
+        "Pegel-Nummer": "20041",
+        "Fluss": "Lippe",
+        "Rechtswert": 406105.49,
+        "Hochwert": 5722816.04,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 354,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Wehr Hamm-Heessen, OP",
+        "Pegel-Nummer": "23014",
+        "Fluss": "Lippe",
+        "Rechtswert": 420277.01,
+        "Hochwert": 5728078.19,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 0,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Wehr Hamm-Heessen, UP",
+        "Pegel-Nummer": "24014",
+        "Fluss": "Lippe",
+        "Rechtswert": 420257.68,
+        "Hochwert": 5728078.42,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 267,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Zeche Auguste Victoria (AV)",
+        "Pegel-Nummer": "20093",
+        "Fluss": "Lippe",
+        "Rechtswert": 370502.76,
+        "Hochwert": 5730597.86,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 382,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "03.12.2024 13:15",
+            "Wert": 89,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "LUEN Brücke Lanstroper Strasse",
+        "Pegel-Nummer": "20129",
+        "Fluss": "Lüserbach",
+        "Rechtswert": 399788.0,
+        "Hochwert": 5716256.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 32,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "UN Bruecke Dortmunder Strasse L 663",
+        "Pegel-Nummer": "20130",
+        "Fluss": "Massener Bach",
+        "Rechtswert": 406492.0,
+        "Hochwert": 5713245.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 27,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Oespeler Bach, Beckenpegel",
+        "Pegel-Nummer": "12117",
+        "Fluss": "Oespeler Bach",
+        "Rechtswert": 387700.61,
+        "Hochwert": 5707210.24,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 10,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Durchlass Sodinger Straße",
+        "Pegel-Nummer": "10097",
+        "Fluss": "Ostbach",
+        "Rechtswert": 378351.21,
+        "Hochwert": 5711000.63,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 52,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 0.0,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "RRB Pawigbach",
+        "Pegel-Nummer": "22103",
+        "Fluss": "Pawigbach",
+        "Rechtswert": 364163.01,
+        "Hochwert": 5717951.65,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 33,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB 1, Pelkumer Bach, Zulauf Pumpwerk",
+        "Pegel-Nummer": "22105",
+        "Fluss": "Pelkumer Bach",
+        "Rechtswert": 410918.57,
+        "Hochwert": 5722041.34,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 138,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Verbindungsweg HRB 2 und HRB 3",
+        "Pegel-Nummer": "20106",
+        "Fluss": "Pelkumer Bach",
+        "Rechtswert": 411380.73,
+        "Hochwert": 5722216.48,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 46,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Zulauf HRB III Pelkumer Bach",
+        "Pegel-Nummer": "20107",
+        "Fluss": "Pelkumer Bach",
+        "Rechtswert": 411667.88,
+        "Hochwert": 5722102.98,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 54,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 0.84,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "HRB Picksmühlenbach, Pawikerstr.",
+        "Pegel-Nummer": "22102",
+        "Fluss": "Picksmühlenbach",
+        "Rechtswert": 364219.12,
+        "Hochwert": 5717808.27,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 53,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "DORS PW Erdbach Polsumer Weg",
+        "Pegel-Nummer": "20131",
+        "Fluss": "Rapphofs Mühlenbach",
+        "Rechtswert": 361841.8077978798,
+        "Hochwert": 5723653.376967198,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 60,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Rapphofs Mühlenbach, Ablauf",
+        "Pegel-Nummer": "21018",
+        "Fluss": "Rapphofs Mühlenbach",
+        "Rechtswert": 363607.95,
+        "Hochwert": 5720843.98,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 58,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Rapphofs Mühlenbach, Becken",
+        "Pegel-Nummer": "22018",
+        "Fluss": "Rapphofs Mühlenbach",
+        "Rechtswert": 363716.75999999983,
+        "Hochwert": 5720939.509999999,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 28,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Rapphofs Mühlenbach, Zulauf",
+        "Pegel-Nummer": "20018",
+        "Fluss": "Rapphofs Mühlenbach",
+        "Rechtswert": 363813.05999999994,
+        "Hochwert": 5720845.469999999,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 45,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Pumpwerk Galgenbach",
+        "Pegel-Nummer": "20118",
+        "Fluss": "Rapphofs Mühlenbach",
+        "Rechtswert": 360439.6500000001,
+        "Hochwert": 5725010.32,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 162,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Brücke Huckarder Straße",
+        "Pegel-Nummer": "10120",
+        "Fluss": "Roßbach",
+        "Rechtswert": 390344.27,
+        "Hochwert": 5710061.26,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 32,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 0.14,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Kirchstraße, Ablauf Rotbachsee uh. Mühle",
+        "Pegel-Nummer": "31004",
+        "Fluss": "Rotbach",
+        "Rechtswert": 345804.93,
+        "Hochwert": 5715116.35,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 55,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 0.47,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Rotbachsee, Beckenpegel",
+        "Pegel-Nummer": "32004",
+        "Fluss": "Rotbach",
+        "Rechtswert": 346243.35,
+        "Hochwert": 5715352.34,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 54,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Schlägerheide, Zulauf Rotbachsee",
+        "Pegel-Nummer": "30004",
+        "Fluss": "Rotbach",
+        "Rechtswert": 349403.81,
+        "Hochwert": 5716658.86,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 37,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 0.65,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Zum Freibad, uh. Staubauwerk",
+        "Pegel-Nummer": "31005",
+        "Fluss": "Rotbach",
+        "Rechtswert": 346002.07,
+        "Hochwert": 5715252.17,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 104,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Ostenbergstraße",
+        "Pegel-Nummer": "16021",
+        "Fluss": "Rüpingsbach",
+        "Rechtswert": 390819.90999999986,
+        "Hochwert": 5704998.359999999,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 43,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Schmechtingsbach, Ablaufpegel",
+        "Pegel-Nummer": "11116",
+        "Fluss": "Schmechtingsbach",
+        "Rechtswert": 387204.0,
+        "Hochwert": 5707651.0,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 49,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Schmechtingsbach, Beckenpegel",
+        "Pegel-Nummer": "12116",
+        "Fluss": "Schmechtingsbach",
+        "Rechtswert": 387231.9999999999,
+        "Hochwert": 5707554.999999999,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 21,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "DORS Brücke Gelsenkirchener Straße",
+        "Pegel-Nummer": "20123",
+        "Fluss": "Schölsbach",
+        "Rechtswert": 359727.0000000001,
+        "Hochwert": 5723791.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 36,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "GE Brücke Aldenhofstraße",
+        "Pegel-Nummer": "10125",
+        "Fluss": "Schwarzbach",
+        "Rechtswert": 364709.0,
+        "Hochwert": 5708715.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 15,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "GE Schwarzmühlenstraße",
+        "Pegel-Nummer": "10126",
+        "Fluss": "Schwarzbach",
+        "Rechtswert": 366723.0,
+        "Hochwert": 5707446.0,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 20,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Brücke Preußenstraße",
+        "Pegel-Nummer": "20022",
+        "Fluss": "Seseke",
+        "Rechtswert": 399648.08,
+        "Hochwert": 5717826.66,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 147,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 4.3,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "HRB Bönen, Ablaufpegel, Mündung Rexebach",
+        "Pegel-Nummer": "21113",
+        "Fluss": "Seseke",
+        "Rechtswert": 412572.09,
+        "Hochwert": 5715684.44,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 65,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Bönen, Beckenpegel",
+        "Pegel-Nummer": "22113",
+        "Fluss": "Seseke",
+        "Rechtswert": 413445.03,
+        "Hochwert": 5715830.65,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 57,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "HRB Bönen, Zulaufpegel",
+        "Pegel-Nummer": "20113",
+        "Fluss": "Seseke",
+        "Rechtswert": 414849.51,
+        "Hochwert": 5715048.6,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 46,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:15",
+            "Wert": 1.1,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Sesekedamm, Brücke Ostenallee",
+        "Pegel-Nummer": "20021",
+        "Fluss": "Seseke",
+        "Rechtswert": 407778.96,
+        "Hochwert": 5716392.74,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 117,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Zufahrt zur Kläranlage Kamen, Lünener Straße",
+        "Pegel-Nummer": "20085",
+        "Fluss": "Seseke",
+        "Rechtswert": 405936.5,
+        "Hochwert": 5716010.11,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:20",
+            "Wert": 80,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:20",
+            "Wert": 3.0,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "HRB Sickingsmühlenbach",
+        "Pegel-Nummer": "22046",
+        "Fluss": "Sickingmühlenbach",
+        "Rechtswert": 369793.28,
+        "Hochwert": 5728818.2,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:25",
+            "Wert": 88,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Hullerner Damm, Tennisplätze",
+        "Pegel-Nummer": "20115",
+        "Fluss": "Stever",
+        "Rechtswert": 375731.45,
+        "Hochwert": 5733622.52,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 216,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 15,
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": true
+    },
+    {
+        "Name": "Oberhalb Kanaldüker",
+        "Pegel-Nummer": "20116",
+        "Fluss": "Weierbach",
+        "Rechtswert": 365350.45000000007,
+        "Hochwert": 5727113.91,
+        "Aktueller Trend": "Kein Trend",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 44,
+            "Aktuelle Warnstufe": -1
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    },
+    {
+        "Name": "Durchlass Luner Weg, neu",
+        "Pegel-Nummer": "20117",
+        "Fluss": "Wienbach",
+        "Rechtswert": 360044.4,
+        "Hochwert": 5727342.49,
+        "Aktueller Trend": "Keine Daten",
+        "latest_waterlevel": {
+            "Datum": "25.12.2024 22:30",
+            "Wert": 41,
+            "Aktuelle Warnstufe": 0
+        },
+        "latest_discharge": {
+            "Datum": "",
+            "Wert": "k.A.",
+            "Aktuelle Warnstufe": null
+        },
+        "has_current_waterlevel": true,
+        "has_current_discharge": false
+    }
+]

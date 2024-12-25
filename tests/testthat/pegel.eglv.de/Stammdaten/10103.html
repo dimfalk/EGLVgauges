@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+
+
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico" >
+
+    <link rel="stylesheet" href="/static/external_css/ol-9.1.0.css" />
+    <link rel="stylesheet" href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css'>
+    <link rel="stylesheet" href="/static/external_css/flatpickr.min-4.6.13.css" type="text/css">
+
+    <link rel="stylesheet" href="/static/CACHE/css/output.e05ebe6755cd.css" type="text/css" media="screen">
+
+
+    <script src="/static/external_js/proj4-2.9.0.js"></script>
+    <script src="/static/external_js/ol-9.1.0.js"></script>
+    <script src="/static/external_js/jquery-3.6.0.min.js"></script>
+    <script src="/static/external_js/bootstrap.bundle.min-5.3.js"></script>
+    <script src="/static/external_js/D3.v7.js"></script>
+    <script src="/static/external_js/flatpickr-4.6.13.js"></script>
+    <script src="/static/external_js/flatpickr.locale.de-de-4.6.13.js"></script>
+    <script src="/static/external_js/dayjs-1.11.10.js"></script>
+    <script src="/static/external_js/dayjs.utc-1.11.10.js"></script>
+
+
+    <script id="CHECK_FOR_NEW_DATA_FRONTEND" type="application/json">300</script>
+    <script id="MAP_SRID" type="application/json">25832</script>
+    <script id="MAX_DATE" type="application/json">null</script>
+
+
+    <script type="text/javascript">
+        window.CSRF_TOKEN = "GOELrOUyl97OFvSVTOoVxhOMVdxr90afx2TfmmMYXWpHFnwfK6UnMC8IZI2VyDGh";
+        dayjs.extend(window.dayjs_plugin_utc)
+
+        const CHECK_FOR_NEW_DATA_FRONTEND = JSON.parse(document.getElementById('CHECK_FOR_NEW_DATA_FRONTEND')
+            .textContent);
+        const MAX_DATE = JSON.parse(document.getElementById('MAX_DATE').textContent);
+        const MAP_SRID = JSON.parse(document.getElementById('MAP_SRID').textContent);
+        var MONATE = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober',
+            'November', 'Dezember'
+        ]
+
+        console.log(`Refreshing data every ${CHECK_FOR_NEW_DATA_FRONTEND} Seconds`)
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid py-0 py-md-1">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-11 col-lg-9 col-xl-8 border border-dark border-2">
+                <!-- <div class="container-fluid"> -->
+                <!-- <div class="row justify-content-center"> -->
+                <!-- <div class="col-12 border border-dark border-2"> -->
+                
+
+<script id="serial" type="application/json">10103</script>
+
+<script>
+    var static_path = "/static/"
+</script>
+
+<div class="row border-bottom border-dark border-2">
+
+    <div class="col-5 col-md-4 col-lg-3 position-relative">
+        <div class="position-absolute top-0 bottom-0 start-0 end-0">
+            <a href="https://www.eglv.de/niederschlag-und-pegel/"><img src="/static/EGLV_horizontal.png" class="img-fluid logo"></a>
+        </div>
+    </div>
+
+    <div class="col-7 col-md-8 col-lg-9 ps-3">
+        <span class="title">Stammdaten für Pegel: <br>Bahnstraße, Ultraschallanlage</span>
+        <span class="sub-title"></span>
+    </div>
+
+</div>
+
+
+<div class="row border-bottom border-dark border-2 mt-2 pb-2">
+    <div class="col-auto me-auto order-1 order-md-1">
+        <a role="button" class="btn btn-primary" href='/Zeitreihe/10103'>
+            <i class="bi bi-box-arrow-left"></i>
+            Zeitreihe
+        </a>
+    </div>
+
+    <div class="col-12 col-md-4 col-lg-5 col-xl-6 mt-3 mt-md-0 order-3 order-md-2">
+        <select id="gauge_select" name="serial" class='form-select border border-3 border-dark'
+            onchange='get_page("/Stammdaten/");'>
+            
+            <option value="10104" >
+                Berne - Econova Allee (10104)
+            </option>
+            
+            <option value="10135" >
+                Borbecker Mühlenbach - E Posener Straße (neu) (10135)
+            </option>
+            
+            <option value="11038" >
+                Borbecker Mühlenbach - HRB Borbecker MB, Ablauf, unterhalb Bergmühle (11038)
+            </option>
+            
+            <option value="12036" >
+                Borbecker Mühlenbach - HRB Borbecker Mühlenbach, Beckenpegel, Staubauwerk (12036)
+            </option>
+            
+            <option value="10085" >
+                Borbecker Mühlenbach - Nöggerathstraße (10085)
+            </option>
+            
+            <option value="10140" >
+                Boye - BOT Gungstraße, Fußgängerbrücke (10140)
+            </option>
+            
+            <option value="10141" >
+                Boye - Braukstraße, B224 (10141)
+            </option>
+            
+            <option value="10139" >
+                Boye - GLA Brücke Welheimer Straße (10139)
+            </option>
+            
+            <option value="22049" >
+                Bruckhauser Mühlenbach - An den Höfen, Hünxe (HRB) (22049)
+            </option>
+            
+            <option value="21119" >
+                Bruckhauser Mühlenbach - HÜN HRB Zur alten Mühle, Ablauf (21119)
+            </option>
+            
+            <option value="22119" >
+                Bruckhauser Mühlenbach - Zur alten Mühle, HRB Beckenpegel (22119)
+            </option>
+            
+            <option value="22101" >
+                Brüggerbach - RRB Brüggerbach, Ulfkotter Strasse (22101)
+            </option>
+            
+            <option value="20030" >
+                Dattelner Mühlenbach - Bahnbrücke, Zum Gutacker (20030)
+            </option>
+            
+            <option value="22047" >
+                Dattelner Mühlenbach - HRB Dattelner Mühlenbach, Becken neu (22047)
+            </option>
+            
+            <option value="20032" >
+                Dattelner Mühlenbach - Natroper Weg, Brücke (20032)
+            </option>
+            
+            <option value="23043" >
+                Dattelner Mühlenbach - Oberhalb Durchlass Park (23043)
+            </option>
+            
+            <option value="20043" >
+                Dattelner Mühlenbach - Wiesenstraße (20043)
+            </option>
+            
+            <option value="10042" >
+                Deininghauser Bach - Westring in Castrop-Rauxel Bladenhorst (10042)
+            </option>
+            
+            <option value="10128" >
+                Dorneburger Mühlenbach - HER Brücke Am Berg (10128)
+            </option>
+            
+            <option value="10109" >
+                Dorneburger Mühlenbach - Sonnenblumenweg, Kleingartenanlage (10109)
+            </option>
+            
+            <option value="11108" >
+                Emscher - Ablauf Phönixsee, Brücke zum Magazin (11108)
+            </option>
+            
+            <option value="10107" >
+                Emscher - Adelenstraße (10107)
+            </option>
+            
+            <option value="10119" >
+                Emscher - Adenauerallee (10119)
+            </option>
+            
+            <option value="10124" >
+                Emscher - Am Stadthafen (10124)
+            </option>
+            
+            <option value="10103"  selected>
+                Emscher - Bahnstraße, Ultraschallanlage (10103)
+            </option>
+            
+            <option value="10099" >
+                Emscher - Brücke Konrad-Adenauer-Straße (10099)
+            </option>
+            
+            <option value="16137" >
+                Emscher - DIN Hagelstraße (16137)
+            </option>
+            
+            <option value="16136" >
+                Emscher - DIN Heerstraße (16136)
+            </option>
+            
+            <option value="10132" >
+                Emscher - DO Brücke Sölder Straße (10132)
+            </option>
+            
+            <option value="10134" >
+                Emscher - DO Fußgängerbrücke Schweizer Allee (10134)
+            </option>
+            
+            <option value="11133" >
+                Emscher - DO HRB Ellinghausen Ablauf, Brücke Gut Königsmühle (11133)
+            </option>
+            
+            <option value="10113" >
+                Emscher - Dortmund-Dorstfeld, Brücke Dorstfelder Hellweg (10113)
+            </option>
+            
+            <option value="10026" >
+                Emscher - Dortmund-Mengede (10026)
+            </option>
+            
+            <option value="10101" >
+                Emscher - Essener Straße (10101)
+            </option>
+            
+            <option value="10115" >
+                Emscher - HRB Mengede, Ablaufpegel, JVA Meisenhof (10115)
+            </option>
+            
+            <option value="12114" >
+                Emscher - HRB Mengede, Beckenpegel, oh. Staubauwerk (12114)
+            </option>
+            
+            <option value="12111" >
+                Emscher - HRB Nagelpötchen, Beckenpegel (12111)
+            </option>
+            
+            <option value="12112" >
+                Emscher - HRB Vieselerhofstraße, Beckenpegel (12112)
+            </option>
+            
+            <option value="12108" >
+                Emscher - Phönixsee, Beckenpegel (12108)
+            </option>
+            
+            <option value="11110" >
+                Emscher - Strickerstraße (11110)
+            </option>
+            
+            <option value="12118" >
+                Goldhammer Bach - HRB Goldhammer Bach, Beckenpegel (12118)
+            </option>
+            
+            <option value="20017" >
+                Hammbach - Am Freibad, Rosenstraße (20017)
+            </option>
+            
+            <option value="20020" >
+                Hammbach - Am Strandbad (20020)
+            </option>
+            
+            <option value="20114" >
+                Hasseler Mühlenbach - Polsumer Straße (20114)
+            </option>
+            
+            <option value="21109" >
+                Heerener Mühlenbach - HRB Kortelbach, Ablaufpegel (21109)
+            </option>
+            
+            <option value="22109" >
+                Heerener Mühlenbach - HRB Kortelbach, Beckenpegel (22109)
+            </option>
+            
+            <option value="10122" >
+                Hellbach - Feldstraße (10122)
+            </option>
+            
+            <option value="22081" >
+                Herringer Bach - HRB Herringer Bach, Becken (22081)
+            </option>
+            
+            <option value="23083" >
+                Herringer Bach - Oberhalb Drosselbauwerk (23083)
+            </option>
+            
+            <option value="24083" >
+                Herringer Bach - Unterhalb Drosselbauwerk (24083)
+            </option>
+            
+            <option value="10131" >
+                Hörder Bach - DO Brücke Hörder Hafenstraße (10131)
+            </option>
+            
+            <option value="10127" >
+                Hüller Bach - GE-Brücke Reckfeldstraße (10127)
+            </option>
+            
+            <option value="11030" >
+                Hüller Bach - HRB Herne-Röhlinghausen, Ablauf (11030)
+            </option>
+            
+            <option value="12030" >
+                Hüller Bach - HRB Herne-Röhlinghausen, Becken (12030)
+            </option>
+            
+            <option value="10030" >
+                Hüller Bach - HRB Herne-Röhlinghausen, Zulauf (10030)
+            </option>
+            
+            <option value="10047" >
+                Hüller Bach - Willy-Brandt-Allee, B 226 (10047)
+            </option>
+            
+            <option value="21100" >
+                Körne - HRB Do-Scharnhorst, Ablauf (21100)
+            </option>
+            
+            <option value="22100" >
+                Körne - HRB Scharnhorst, Becken (22100)
+            </option>
+            
+            <option value="20100" >
+                Körne - HRB Scharnhorst, Zulauf (20100)
+            </option>
+            
+            <option value="10130" >
+                Landwehrbach - HER Schachtstraße (10130)
+            </option>
+            
+            <option value="10071" >
+                Landwehrbach - Provisorischer Beckenpegel, HRB Landwehrbach (10071)
+            </option>
+            
+            <option value="10020" >
+                Landwehrbach - Westring in Castrop-Rauxel, unterhalb SKU (10020)
+            </option>
+            
+            <option value="20122" >
+                Lippe - An der Rauschenburg, (Vinnum neu) (20122)
+            </option>
+            
+            <option value="20004" >
+                Lippe - Dorsten, Borkener Straße (20004)
+            </option>
+            
+            <option value="20001" >
+                Lippe - Fusternberg (20001)
+            </option>
+            
+            <option value="28085" >
+                Lippe - Haltern, Recklinghäuser Straße (28085)
+            </option>
+            
+            <option value="20012" >
+                Lippe - HAM Radbodstraße (20012)
+            </option>
+            
+            <option value="20084" >
+                Lippe - Heintroper Straße, Brücke B475 (20084)
+            </option>
+            
+            <option value="20002" >
+                Lippe - Krudenburg (20002)
+            </option>
+            
+            <option value="20045" >
+                Lippe - Lippestraße, Klg. Selm-Bork (20045)
+            </option>
+            
+            <option value="23009" >
+                Lippe - Lünen-Beckinghausen / Wehr OP (23009)
+            </option>
+            
+            <option value="24009" >
+                Lippe - Lünen-Beckinghausen, Wehr UP (24009)
+            </option>
+            
+            <option value="20008" >
+                Lippe - Lünen, Graf-Adolf-Straße (20008)
+            </option>
+            
+            <option value="20041" >
+                Lippe - Rünthe, Kamener Straße, B 233 (20041)
+            </option>
+            
+            <option value="23014" >
+                Lippe - Wehr Hamm-Heessen, OP (23014)
+            </option>
+            
+            <option value="24014" >
+                Lippe - Wehr Hamm-Heessen, UP (24014)
+            </option>
+            
+            <option value="20093" >
+                Lippe - Zeche Auguste Victoria (AV) (20093)
+            </option>
+            
+            <option value="20129" >
+                Lüserbach - LUEN Brücke Lanstroper Strasse (20129)
+            </option>
+            
+            <option value="20130" >
+                Massener Bach - UN Bruecke Dortmunder Strasse L 663 (20130)
+            </option>
+            
+            <option value="12117" >
+                Oespeler Bach - HRB Oespeler Bach, Beckenpegel (12117)
+            </option>
+            
+            <option value="10097" >
+                Ostbach - Durchlass Sodinger Straße (10097)
+            </option>
+            
+            <option value="22103" >
+                Pawigbach - RRB Pawigbach (22103)
+            </option>
+            
+            <option value="22105" >
+                Pelkumer Bach - HRB 1, Pelkumer Bach, Zulauf Pumpwerk (22105)
+            </option>
+            
+            <option value="20106" >
+                Pelkumer Bach - Verbindungsweg HRB 2 und HRB 3 (20106)
+            </option>
+            
+            <option value="20107" >
+                Pelkumer Bach - Zulauf HRB III Pelkumer Bach (20107)
+            </option>
+            
+            <option value="22102" >
+                Picksmühlenbach - HRB Picksmühlenbach, Pawikerstr. (22102)
+            </option>
+            
+            <option value="20131" >
+                Rapphofs Mühlenbach - DORS PW Erdbach Polsumer Weg (20131)
+            </option>
+            
+            <option value="21018" >
+                Rapphofs Mühlenbach - HRB Rapphofs Mühlenbach, Ablauf (21018)
+            </option>
+            
+            <option value="22018" >
+                Rapphofs Mühlenbach - HRB Rapphofs Mühlenbach, Becken (22018)
+            </option>
+            
+            <option value="20018" >
+                Rapphofs Mühlenbach - HRB Rapphofs Mühlenbach, Zulauf (20018)
+            </option>
+            
+            <option value="20118" >
+                Rapphofs Mühlenbach - Pumpwerk Galgenbach (20118)
+            </option>
+            
+            <option value="10120" >
+                Roßbach - Brücke Huckarder Straße (10120)
+            </option>
+            
+            <option value="31004" >
+                Rotbach - Kirchstraße, Ablauf Rotbachsee uh. Mühle (31004)
+            </option>
+            
+            <option value="32004" >
+                Rotbach - Rotbachsee, Beckenpegel (32004)
+            </option>
+            
+            <option value="30004" >
+                Rotbach - Schlägerheide, Zulauf Rotbachsee (30004)
+            </option>
+            
+            <option value="31005" >
+                Rotbach - Zum Freibad, uh. Staubauwerk (31005)
+            </option>
+            
+            <option value="16021" >
+                Rüpingsbach - Ostenbergstraße (16021)
+            </option>
+            
+            <option value="11116" >
+                Schmechtingsbach - HRB Schmechtingsbach, Ablaufpegel (11116)
+            </option>
+            
+            <option value="12116" >
+                Schmechtingsbach - HRB Schmechtingsbach, Beckenpegel (12116)
+            </option>
+            
+            <option value="20123" >
+                Schölsbach - DORS Brücke Gelsenkirchener Straße (20123)
+            </option>
+            
+            <option value="10125" >
+                Schwarzbach - GE Brücke Aldenhofstraße (10125)
+            </option>
+            
+            <option value="10126" >
+                Schwarzbach - GE Schwarzmühlenstraße (10126)
+            </option>
+            
+            <option value="20022" >
+                Seseke - Brücke Preußenstraße (20022)
+            </option>
+            
+            <option value="21113" >
+                Seseke - HRB Bönen, Ablaufpegel, Mündung Rexebach (21113)
+            </option>
+            
+            <option value="22113" >
+                Seseke - HRB Bönen, Beckenpegel (22113)
+            </option>
+            
+            <option value="20113" >
+                Seseke - HRB Bönen, Zulaufpegel (20113)
+            </option>
+            
+            <option value="20021" >
+                Seseke - Sesekedamm, Brücke Ostenallee (20021)
+            </option>
+            
+            <option value="20085" >
+                Seseke - Zufahrt zur Kläranlage Kamen, Lünener Straße (20085)
+            </option>
+            
+            <option value="22046" >
+                Sickingmühlenbach - HRB Sickingsmühlenbach (22046)
+            </option>
+            
+            <option value="20115" >
+                Stever - Hullerner Damm, Tennisplätze (20115)
+            </option>
+            
+            <option value="20116" >
+                Weierbach - Oberhalb Kanaldüker (20116)
+            </option>
+            
+            <option value="20117" >
+                Wienbach - Durchlass Luner Weg, neu (20117)
+            </option>
+            
+        </select>
+    </div>
+
+
+    <div class="col-auto ms-auto order-2 order-md-3">
+        <a role="button" class="btn btn-primary" href='/'>
+            <i class="bi bi-box-arrow-right"></i>
+            Pegelansicht
+        </a>
+    </div>
+</div>
+
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-6">
+        <b>Allgemeine Infos:</b>
+        <ul>
+            
+            <li>Name: Bahnstraße, Ultraschallanlage</li>
+            
+            <li>Pegel-Nummer: 10103</li>
+            
+            <li>Fluss: Emscher</li>
+            
+            <li>Stadt: Oberhausen</li>
+            
+            <li>Rechtswert UTM 32N [m]: 346978,85999999987</li>
+            
+            <li>Hochwert UTM 32N [m]: 5710823,759999999</li>
+            
+            <li>Mündungs-Entf. [km]: 8,87</li>
+            
+            <li>EZG-Größe [km²]: 770,3</li>
+            
+            <li>Pegelnullpunkt [m üNHN]: 23,23</li>
+            
+        </ul>
+    </div>
+
+    <div class="col-12 col-md-3">
+        <b>Wasserstand Statistik:</b>
+        
+        <br>Keine Wasserstands Statistiken verfügbar!
+        
+    </div>
+
+    <div class="col-12 col-md-3">
+        <b>Durchfluss Statistik:</b>
+        
+        <br>Keine Durchfluss Statistiken verfügbar!
+        
+
+    </div>
+
+</div>
+
+
+<div class="row py-1 border-bottom border-dark border-2">
+
+    
+    
+    <div class="col-12 col-md-6">
+        <figure class="figure w-100">
+            <figcaption class="figure-caption"> Der Pegel</figcaption>
+            <img id="pegel" src=/static/pegelbild/10103.jpg height="auto" width="100%" class="figure-img img-fluid rounded">
+            <span id="pegel_error"></span>
+        </figure>
+    </div>
+    
+
+
+    
+    
+    <div class="col-12 col-md-6">
+        <figure class="figure w-100 d-block">
+            <figcaption class="figure-caption"> Der Standort</figcaption>
+            <embed id="lageplan" src="/static/lageplan/10103.pdf" height="500px" width="100%"
+                class="figure-img rounded w-100 mx-auto border" />
+            <span id="lageplan_error"></span>
+
+        </figure>
+    </div>
+    
+
+</div>
+
+<div class="row">
+    <div class="col">
+        <small>Hinweis: Die verwendeten Daten sind ungeprüfte Rohdaten!</small>
+    </div>
+
+    <div class="col text-end">
+        <a href="https://www.eglv.de/impressum/">Impressum</a> /
+        <a href="https://www.eglv.de/datenschutzbestimmungen/">Datenschutz</a> /
+        <a href="https://www.okeanos.ai/">Technische Umsetzung</a>
+    </div>
+
+</div>
+
+
+<script src="/static/functions.js"></script>
+<script src="/static/infos.js"></script>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

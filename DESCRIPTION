@@ -1,6 +1,6 @@
 Package: EGLVgauges
 Title: R Interface for data acquisition from pegel.eglv.de
-Version: 0.2.0
+Version: 0.2.1
 Date: 2024-12-25
 Authors@R: 
     person("Dimitri", "Falk", , "falk.dimitri@eglv.de", role = c("aut", "cre"))
@@ -23,6 +23,7 @@ Imports:
     zoo
 Suggests: 
     covr,
+    httptest,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 LazyData: true

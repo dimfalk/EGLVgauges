@@ -1,45 +1,76 @@
-test_that("Output class is as expected.", {
+with_mock_api({
 
-  x <- gauges_ref |> dplyr::filter(id == "10103")
+  test_that("Output class is as expected.", {
 
-  meas_1 <- get_measurements(x)
+    x <- gauges_ref |> dplyr::filter(id == "10103")
 
-  expect_equal(class(meas_1), "list")
+    meas <- get_measurements(x)
 
-  expect_s3_class(meas_1[[1]], c("xts", "zoo"))
+    expect_equal(class(meas), "list")
 
-  meas_2 <- get_measurements(x, discharge = TRUE)
+    expect_s3_class(meas[[1]], c("xts", "zoo"))
+  })
 
-  expect_equal(class(meas_2), "list")
+  test_that("Output class is as expected.", {
 
-  expect_s3_class(meas_2[[1]], c("xts", "zoo"))
+    x <- gauges_ref |> dplyr::filter(id == "10103")
+
+    meas <- get_measurements(x, discharge = TRUE)
+
+    expect_equal(class(meas), "list")
+
+    expect_s3_class(meas[[1]], c("xts", "zoo"))
+  })
+
+  test_that("Output class is as expected.", {
+
+    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+
+    meas <- get_measurements(y)
+
+    expect_equal(class(meas), "list")
+
+    expect_s3_class(meas[[1]], c("xts", "zoo"))
+
+    expect_s3_class(meas[[2]], c("xts", "zoo"))
+  })
 
 
 
-  y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+  test_that("Attributes are as expected.", {
 
-  meas_3 <- get_measurements(y)
+    x <- gauges_ref |> dplyr::filter(id == "10103")
 
-  expect_equal(class(meas_3), "list")
+    meas <- get_measurements(x)
 
-  expect_s3_class(meas_3[[1]], c("xts", "zoo"))
+    expect_equal(attr(meas[[1]], "STAT_ID"), "10103")
 
-  expect_s3_class(meas_3[[2]], c("xts", "zoo"))
-})
+    expect_equal(attr(meas[[1]], "PARAMETER"), "Wasserstand")
+  })
 
-test_that("Attributes are as expected.", {
+  test_that("Attributes are as expected.", {
 
-  x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- gauges_ref |> dplyr::filter(id == "10103")
 
-  meas_1 <- get_measurements(x)
+    meas <- get_measurements(x, discharge = TRUE)
 
-  expect_equal(attr(meas_1[[1]], "STAT_ID"), "10103")
+    expect_equal(attr(meas[[1]], "STAT_ID"), "10103")
 
-  expect_equal(attr(meas_1[[1]], "PARAMETER"), "Wasserstand")
+    expect_equal(attr(meas[[1]], "PARAMETER"), "Durchfluss")
+  })
 
-  meas_2 <- get_measurements(x, discharge = TRUE)
+  test_that("Attributes are as expected.", {
 
-  expect_equal(attr(meas_2[[1]], "STAT_ID"), "10103")
+    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
 
-  expect_equal(attr(meas_2[[1]], "PARAMETER"), "Durchfluss")
+    meas <- get_measurements(y)
+
+    expect_equal(attr(meas[[1]], "STAT_ID"), "20017")
+
+    expect_equal(attr(meas[[1]], "PARAMETER"), "Wasserstand")
+
+    expect_equal(attr(meas[[2]], "STAT_ID"), "20020")
+
+    expect_equal(attr(meas[[2]], "PARAMETER"), "Wasserstand")
+  })
 })

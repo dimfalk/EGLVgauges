@@ -1,51 +1,54 @@
-test_that("Output class is as expected.", {
+with_mock_api({
 
-  x <- get_gauges()
+  test_that("Output class is as expected.", {
 
-  expect_s3_class(x, c("sf", "tbl_df", "tbl", "data.frame"))
-})
+    x <- get_gauges()
 
-test_that("Dimensions are as expected.", {
+    expect_s3_class(x, c("sf", "tbl_df", "tbl", "data.frame"))
+  })
 
-  x <- get_gauges()
+  test_that("Dimensions are as expected.", {
 
-  expect_equal(dim(x), c(112, 13))
-})
+    x <- get_gauges()
 
-test_that("Column names are as expected.", {
+    expect_equal(dim(x), c(112, 13))
+  })
 
-  cnames <- c("id", "name", "waterbody", "current_trend",
-              "has_current_waterlevel",
-              "latest_waterlevel_datetime",
-              "latest_waterlevel_value",
-              "latest_waterlevel_current_alertlevel",
-              "has_current_discharge",
-              "latest_discharge_datetime",
-              "latest_discharge_value",
-              "latest_discharge_current_alertlevel",
-              "geometry")
+  test_that("Column names are as expected.", {
 
-  x <- get_gauges()
+    cnames <- c("id", "name", "waterbody", "current_trend",
+                "has_current_waterlevel",
+                "latest_waterlevel_datetime",
+                "latest_waterlevel_value",
+                "latest_waterlevel_current_alertlevel",
+                "has_current_discharge",
+                "latest_discharge_datetime",
+                "latest_discharge_value",
+                "latest_discharge_current_alertlevel",
+                "geometry")
 
-  expect_equal(colnames(x), cnames)
-})
+    x <- get_gauges()
 
-test_that("Types are as expected.", {
+    expect_equal(colnames(x), cnames)
+  })
 
-  dtype <- c("character", "character", "character", "character", "logical",
-             "double", "double", "integer", "logical", "double", "double",
-             "logical", "list")
+  test_that("Types are as expected.", {
 
-  x <- get_gauges()
+    dtype <- c("character", "character", "character", "character", "logical",
+               "double", "double", "integer", "logical", "double", "double",
+               "logical", "list")
 
-  x_dtype <- lapply(x, typeof) |> unlist() |> as.character()
+    x <- get_gauges()
 
-  expect_equal(x_dtype, dtype)
-})
+    x_dtype <- lapply(x, typeof) |> unlist() |> as.character()
 
-test_that("Function output and reference object are equal.", {
+    expect_equal(x_dtype, dtype)
+  })
 
-  x <- get_gauges() |> dplyr::select("id", "name", "waterbody")
+  test_that("Function output and reference object are equal.", {
 
-  expect_equal(x, gauges_ref)
+    x <- get_gauges() |> dplyr::select("id", "name", "waterbody")
+
+    expect_equal(x, gauges_ref)
+  })
 })

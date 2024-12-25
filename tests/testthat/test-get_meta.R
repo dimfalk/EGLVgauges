@@ -1,64 +1,73 @@
-test_that("Output class is as expected.", {
+with_mock_api({
 
-  x <- gauges_ref |> dplyr::filter(id == "10103")
+  test_that("Output class is as expected.", {
 
-  meta <- get_meta(x)
+    x <- gauges_ref |> dplyr::filter(id == "10103")
 
-  expect_s3_class(meta, c("tbl_df", "tbl", "data.frame"))
+    meta <- get_meta(x)
 
-  y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+    expect_s3_class(meta, c("tbl_df", "tbl", "data.frame"))
+  })
 
-  meta <- get_meta(y)
+  test_that("Output class is as expected.", {
 
-  expect_s3_class(meta, c("tbl_df", "tbl", "data.frame"))
-})
+    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
 
-test_that("Dimensions are as expected.", {
+    meta <- get_meta(y)
 
-  x <- gauges_ref |> dplyr::filter(id == "10103")
+    expect_s3_class(meta, c("tbl_df", "tbl", "data.frame"))
+  })
 
-  meta <- get_meta(x)
+  test_that("Dimensions are as expected.", {
 
-  expect_equal(dim(meta), c(1, 9))
+    x <- gauges_ref |> dplyr::filter(id == "10103")
 
-  y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+    meta <- get_meta(x)
 
-  meta <- get_meta(y)
+    expect_equal(dim(meta), c(1, 9))
+  })
 
-  expect_equal(dim(meta), c(2, 9))
-})
+  test_that("Dimensions are as expected.", {
 
-test_that("Column names are as expected.", {
+    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
 
-  cnames <- c("id", "name", "waterbody", "municipality", "X", "Y", "river_km",
-              "catchment_area", "level_zero")
+    meta <- get_meta(y)
 
-  x <- gauges_ref |> dplyr::filter(id == "10103")
+    expect_equal(dim(meta), c(2, 9))
+  })
 
-  meta <- get_meta(x)
+  test_that("Column names are as expected.", {
 
-  expect_equal(colnames(meta), cnames)
-})
+    cnames <- c("id", "name", "waterbody", "municipality", "X", "Y", "river_km",
+                "catchment_area", "level_zero")
 
-test_that("Types are as expected.", {
+    x <- gauges_ref |> dplyr::filter(id == "10103")
 
-  dtype <- c("character", "character", "character", "character", "double",
-             "double", "double", "double", "double")
+    meta <- get_meta(x)
 
-  x <- gauges_ref |> dplyr::filter(id == "10103")
+    expect_equal(colnames(meta), cnames)
+  })
 
-  meta <- get_meta(x)
+  test_that("Types are as expected.", {
 
-  meta_dtype <- lapply(meta, typeof) |> unlist() |> as.character()
+    dtype <- c("character", "character", "character", "character", "double",
+               "double", "double", "double", "double")
 
-  expect_equal(meta_dtype, dtype)
-})
+    x <- gauges_ref |> dplyr::filter(id == "10103")
 
-test_that("Function output and reference object are equal.", {
+    meta <- get_meta(x)
 
-  x <- gauges_ref |> dplyr::filter(id == "10103")
+    meta_dtype <- lapply(meta, typeof) |> unlist() |> as.character()
 
-  meta <- get_meta(x)
+    expect_equal(meta_dtype, dtype)
+  })
 
-  expect_equal(meta, meta_10103_ref)
+  test_that("Function output and reference object are equal.", {
+
+    x <- gauges_ref |> dplyr::filter(id == "10103")
+
+    meta <- get_meta(x)
+
+    expect_equal(meta, meta_10103_ref)
+  })
 })

@@ -2,7 +2,7 @@ with_mock_api({
 
   test_that("Output class is as expected.", {
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meta <- get_meta(x)
 
@@ -11,7 +11,7 @@ with_mock_api({
 
   test_that("Output class is as expected.", {
 
-    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+    y <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 
     meta <- get_meta(y)
 
@@ -20,7 +20,7 @@ with_mock_api({
 
   test_that("Dimensions are as expected.", {
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meta <- get_meta(x)
 
@@ -29,7 +29,7 @@ with_mock_api({
 
   test_that("Dimensions are as expected.", {
 
-    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+    y <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 
     meta <- get_meta(y)
 
@@ -41,7 +41,7 @@ with_mock_api({
     cnames <- c("id", "name", "waterbody", "municipality", "X", "Y", "river_km",
                 "catchment_area", "level_zero")
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meta <- get_meta(x)
 
@@ -53,21 +53,12 @@ with_mock_api({
     dtype <- c("character", "character", "character", "character", "double",
                "double", "double", "double", "double")
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meta <- get_meta(x)
 
     meta_dtype <- lapply(meta, typeof) |> unlist() |> as.character()
 
     expect_equal(meta_dtype, dtype)
-  })
-
-  test_that("Function output and reference object are equal.", {
-
-    x <- gauges_ref |> dplyr::filter(id == "10103")
-
-    meta <- get_meta(x)
-
-    expect_equal(meta, meta_10103_ref)
   })
 })

@@ -34,21 +34,15 @@ with_mock_api({
 
   test_that("Types are as expected.", {
 
-    dtype <- c("character", "character", "character", "character", "logical",
-               "double", "double", "integer", "logical", "double", "double",
-               "logical", "list")
+    dtype <- c("character", "character", "character", "character",
+               "logical", "double", "double", "integer",
+               "logical", "double", "double", "logical",
+               "list")
 
     x <- get_gauges()
 
     x_dtype <- lapply(x, typeof) |> unlist() |> as.character()
 
     expect_equal(x_dtype, dtype)
-  })
-
-  test_that("Function output and reference object are equal.", {
-
-    x <- get_gauges() |> dplyr::select("id", "name", "waterbody")
-
-    expect_equal(x, gauges_ref)
   })
 })

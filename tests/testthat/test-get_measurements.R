@@ -2,7 +2,7 @@ with_mock_api({
 
   test_that("Output class is as expected.", {
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meas <- get_measurements(x)
 
@@ -13,7 +13,7 @@ with_mock_api({
 
   test_that("Output class is as expected.", {
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meas <- get_measurements(x, discharge = TRUE)
 
@@ -24,7 +24,7 @@ with_mock_api({
 
   test_that("Output class is as expected.", {
 
-    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+    y <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 
     meas <- get_measurements(y)
 
@@ -39,7 +39,7 @@ with_mock_api({
 
   test_that("Attributes are as expected.", {
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meas <- get_measurements(x)
 
@@ -50,7 +50,7 @@ with_mock_api({
 
   test_that("Attributes are as expected.", {
 
-    x <- gauges_ref |> dplyr::filter(id == "10103")
+    x <- get_gauges() |> dplyr::filter(id == "10103")
 
     meas <- get_measurements(x, discharge = TRUE)
 
@@ -61,7 +61,7 @@ with_mock_api({
 
   test_that("Attributes are as expected.", {
 
-    y <- gauges_ref |> dplyr::filter(waterbody == "Hammbach")
+    y <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 
     meas <- get_measurements(y)
 

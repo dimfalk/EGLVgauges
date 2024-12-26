@@ -9,8 +9,8 @@
 [![Codecov](https://codecov.io/gh/dimfalk/EGLVgauges/branch/main/graph/badge.svg)](https://codecov.io/gh/dimfalk/EGLVgauges)
 <!-- badges: end -->
 
-EGLVgauges aims to grant easy access to EGLV gauge data published at
-[pegel.eglv.de](https://pegel.eglv.de/).
+EGLVgauges aims to grant easy access to EGLV gauge data and metadata
+published at [pegel.eglv.de](https://pegel.eglv.de/).
 
 ## Installation
 
@@ -21,14 +21,18 @@ You can install the development version of EGLVgauges with:
 devtools::install_github("dimfalk/EGLVgauges")
 ```
 
-## Basic examples
-
-Just a few quick insights on the use of this package:
+and load the package via
 
 ``` r
 library(EGLVgauges)
-#> 0.2.3
+#> 0.2.4
+```
 
+## Basic examples
+
+### Get gauge metadata and latest measurements
+
+``` r
 # fetch all available gauges
 gauges <- get_gauges()
 gauges
@@ -57,7 +61,7 @@ gauges
 #> #   latest_discharge_value <dbl>, latest_discharge_current_alertlevel <lgl>,
 #> #   geometry <POINT [m]>
 
-# eventually filter the dataset to the ones you're interested in
+# ... eventually filter the dataset to the objects you're interested in
 gauge <- gauges |> dplyr::filter(id == "10119")
 gauge
 #> Simple feature collection with 1 feature and 12 fields
@@ -74,19 +78,22 @@ gauge
 #> #   has_current_discharge <lgl>, latest_discharge_datetime <dttm>,
 #> #   latest_discharge_value <dbl>, latest_discharge_current_alertlevel <lgl>,
 #> #   geometry <POINT [m]>
+```
 
+### Get (extended) metadata for specific gauge
 
-
-# fetch metadata available
+``` r
 get_meta(gauge)
 #> # A tibble: 1 × 9
 #>   id    name        waterbody municipality      X      Y river_km catchment_area
 #>   <chr> <chr>       <chr>     <chr>         <dbl>  <dbl>    <dbl>          <dbl>
 #> 1 10119 Adenaueral… Emscher   Gelsenkirch… 3.67e5 5.71e6     36.4           481.
 #> # ℹ 1 more variable: level_zero <dbl>
+```
 
+### Get available measurements for specific gauge
 
-
+``` r
 # fetch water level measurements
 meas <- get_measurements(gauge)[[1]]
 meas
@@ -94,9 +101,6 @@ meas
 #>   NOTE: set 'options(xts_check_TZ = FALSE)' to disable this warning
 #>     This note is displayed once per session
 #>                     Wasserstand
-#> 2024-10-28 16:45:00          68
-#> 2024-10-28 16:50:00          68
-#> 2024-10-28 16:55:00          68
 #> 2024-10-28 17:00:00          68
 #> 2024-10-28 17:05:00          68
 #> 2024-10-28 17:10:00          68
@@ -104,10 +108,10 @@ meas
 #> 2024-10-28 17:20:00          68
 #> 2024-10-28 17:25:00          68
 #> 2024-10-28 17:30:00          68
+#> 2024-10-28 17:35:00          68
+#> 2024-10-28 17:40:00          68
+#> 2024-10-28 17:45:00          68
 #>                 ...            
-#> 2024-12-26 15:55:00          85
-#> 2024-12-26 16:00:00          85
-#> 2024-12-26 16:05:00          85
 #> 2024-12-26 16:10:00          85
 #> 2024-12-26 16:15:00          85
 #> 2024-12-26 16:20:00          85
@@ -115,6 +119,9 @@ meas
 #> 2024-12-26 16:30:00          85
 #> 2024-12-26 16:35:00          85
 #> 2024-12-26 16:40:00          85
+#> 2024-12-26 16:45:00          85
+#> 2024-12-26 16:50:00          85
+#> 2024-12-26 16:55:00          85
 
 class(meas)
 #> [1] "xts" "zoo"
@@ -122,4 +129,4 @@ class(meas)
 plot(meas, main = "10119 Adenauerallee", ylab = "Water level [cm]")
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />

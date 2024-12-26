@@ -59,7 +59,7 @@ get_measurements <- function(x = NULL,
                   unit_name = par)
 
     # send request
-    r_raw <- httr::GET(url = base_url, query = query)
+    r_raw <- httr::GET(base_url, query = query)
 
     # parse response: raw to json
     r_json <- httr::content(r_raw, "text", encoding = "UTF-8")

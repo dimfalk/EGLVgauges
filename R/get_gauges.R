@@ -16,7 +16,7 @@ get_gauges <- function() {
   base_url <- "https://pegel.eglv.de/gauges/"
 
   # send request
-  r_raw <- httr::GET(url = base_url)
+  r_raw <- httr::GET(base_url)
 
   # parse response: raw to json
   r_json <- httr::content(r_raw, "text", encoding = "UTF-8")

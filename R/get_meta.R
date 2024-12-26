@@ -46,7 +46,11 @@ get_meta <- function(x = NULL) {
 
     url <- paste0(base_url, ids[i], "/")
 
-    a <- rvest::read_html(url) |>
+    # send request
+    r_raw <- httr::GET(url)
+
+    # parse response: html to text
+    a <-  rvest::read_html(r_raw) |>
       rvest::html_elements("li") |>
       rvest::html_text()
 

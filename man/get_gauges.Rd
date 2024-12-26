@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_gauges.R
 \name{get_gauges}
 \alias{get_gauges}
-\title{Get gauge locations}
+\title{Get gauge metadata (simplified), locations and latest measurements}
 \usage{
 get_gauges()
 }
@@ -10,7 +10,7 @@ get_gauges()
 Sf object.
 }
 \description{
-Get gauge locations
+Get gauge metadata (simplified), locations and latest measurements
 }
 \examples{
 \dontrun{

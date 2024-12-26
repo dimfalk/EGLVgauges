@@ -1,6 +1,7 @@
-#' Get water level or discharge measurements
+#' Get water level or discharge measurements for selected gauges
 #'
-#' @param x Tibble as provided by `get_gauges()`.
+#' @param x Sf object containing gauges to be used for subsequent queries,
+#'     as provided by `get_gauges()`.
 #' @param discharge logical. Retrieve water level or discharge data?
 #'
 #' @return List of xts objects.

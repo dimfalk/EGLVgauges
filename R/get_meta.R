@@ -1,8 +1,9 @@
-#' Get gauge metadata
+#' Get (extended) metadata for selected gauges
 #'
-#' @param x character. Station ID.
+#' @param x Sf object containing gauges to be used for subsequent queries,
+#'     as provided by `get_gauges()`.
 #'
-#' @return Tibble.
+#' @return Tibble containing metadata.
 #' @export
 #'
 #' @seealso [get_gauges()]

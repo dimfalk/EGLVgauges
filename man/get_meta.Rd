@@ -2,18 +2,19 @@
 % Please edit documentation in R/get_meta.R
 \name{get_meta}
 \alias{get_meta}
-\title{Get gauge metadata}
+\title{Get (extended) metadata for selected gauges}
 \usage{
 get_meta(x = NULL)
 }
 \arguments{
-\item{x}{character. Station ID.}
+\item{x}{Sf object containing gauges to be used for subsequent queries,
+as provided by \code{get_gauges()}.}
 }
 \value{
-Tibble.
+Tibble containing metadata.
 }
 \description{
-Get gauge metadata
+Get (extended) metadata for selected gauges
 }
 \examples{
 \dontrun{

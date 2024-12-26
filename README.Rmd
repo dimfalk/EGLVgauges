@@ -39,7 +39,7 @@ library(EGLVgauges)
 
 ## Basic examples
 
-### Get gauge metadata and latest measurements
+### Get gauge metadata, locations and latest measurements
 
 ```{r}
 # fetch all available gauges
@@ -51,13 +51,13 @@ gauge <- gauges |> dplyr::filter(id == "10119")
 gauge
 ```
 
-### Get (extended) metadata for specific gauge
+### Get (extended) metadata for selected gauges
 
 ```{r}
 get_meta(gauge)
 ```
 
-### Get available measurements for specific gauge
+### Get available measurements for selected gauges
 
 ```{r}
 # fetch water level measurements

@@ -25,12 +25,12 @@ and load the package via
 
 ``` r
 library(EGLVgauges)
-#> 0.2.4
+#> 0.2.5
 ```
 
 ## Basic examples
 
-### Get gauge metadata and latest measurements
+### Get gauge metadata, locations and latest measurements
 
 ``` r
 # fetch all available gauges
@@ -80,7 +80,7 @@ gauge
 #> #   geometry <POINT [m]>
 ```
 
-### Get (extended) metadata for specific gauge
+### Get (extended) metadata for selected gauges
 
 ``` r
 get_meta(gauge)
@@ -91,7 +91,7 @@ get_meta(gauge)
 #> # ℹ 1 more variable: level_zero <dbl>
 ```
 
-### Get available measurements for specific gauge
+### Get available measurements for selected gauges
 
 ``` r
 # fetch water level measurements
@@ -101,27 +101,27 @@ meas
 #>   NOTE: set 'options(xts_check_TZ = FALSE)' to disable this warning
 #>     This note is displayed once per session
 #>                     Wasserstand
-#> 2024-10-28 17:30:00          68
-#> 2024-10-28 17:35:00          68
-#> 2024-10-28 17:40:00          68
-#> 2024-10-28 17:45:00          68
-#> 2024-10-28 17:50:00          68
-#> 2024-10-28 17:55:00          68
-#> 2024-10-28 18:00:00          68
-#> 2024-10-28 18:05:00          68
-#> 2024-10-28 18:10:00          68
-#> 2024-10-28 18:15:00          68
+#> 2024-10-28 21:20:00          68
+#> 2024-10-28 21:25:00          68
+#> 2024-10-28 21:30:00          68
+#> 2024-10-28 21:35:00          68
+#> 2024-10-28 21:40:00          68
+#> 2024-10-28 21:45:00          68
+#> 2024-10-28 21:50:00          69
+#> 2024-10-28 21:55:00          69
+#> 2024-10-28 22:00:00          69
+#> 2024-10-28 22:05:00          69
 #>                 ...            
-#> 2024-12-26 16:40:00          85
-#> 2024-12-26 16:45:00          85
-#> 2024-12-26 16:50:00          85
-#> 2024-12-26 16:55:00          85
-#> 2024-12-26 17:00:00          85
-#> 2024-12-26 17:05:00          85
-#> 2024-12-26 17:10:00          85
-#> 2024-12-26 17:15:00          85
-#> 2024-12-26 17:20:00          85
-#> 2024-12-26 17:25:00          85
+#> 2024-12-26 20:30:00          85
+#> 2024-12-26 20:35:00          85
+#> 2024-12-26 20:40:00          86
+#> 2024-12-26 20:45:00          86
+#> 2024-12-26 20:50:00          86
+#> 2024-12-26 20:55:00          86
+#> 2024-12-26 21:00:00          86
+#> 2024-12-26 21:05:00          86
+#> 2024-12-26 21:10:00          86
+#> 2024-12-26 21:15:00          86
 
 class(meas)
 #> [1] "xts" "zoo"

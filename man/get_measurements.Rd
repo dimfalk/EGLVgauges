@@ -2,12 +2,13 @@
 % Please edit documentation in R/get_measurements.R
 \name{get_measurements}
 \alias{get_measurements}
-\title{Get water level or discharge measurements}
+\title{Get water level or discharge measurements for selected gauges}
 \usage{
 get_measurements(x = NULL, discharge = FALSE)
 }
 \arguments{
-\item{x}{Tibble as provided by \code{get_gauges()}.}
+\item{x}{Sf object containing gauges to be used for subsequent queries,
+as provided by \code{get_gauges()}.}
 
 \item{discharge}{logical. Retrieve water level or discharge data?}
 }
@@ -15,7 +16,7 @@ get_measurements(x = NULL, discharge = FALSE)
 List of xts objects.
 }
 \description{
-Get water level or discharge measurements
+Get water level or discharge measurements for selected gauges
 }
 \examples{
 \dontrun{

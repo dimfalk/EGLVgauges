@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml)
-[![Codecov](https://codecov.io/gh/dimfalk/EGLVgauges/branch/main/graph/badge.svg)](https://codecov.io/gh/dimfalk/EGLVgauges)
+[![codecov](https://codecov.io/gh/dimfalk/EGLVgauges/branch/main/graph/badge.svg?token=3JJOI51OT8)](https://codecov.io/gh/dimfalk/EGLVgauges)
 <!-- badges: end -->
 
 EGLVgauges aims to grant easy access to EGLV gauge data and metadata
@@ -101,27 +101,27 @@ meas
 #>   NOTE: set 'options(xts_check_TZ = FALSE)' to disable this warning
 #>     This note is displayed once per session
 #>                     Wasserstand
-#> 2024-10-28 17:00:00          68
-#> 2024-10-28 17:05:00          68
-#> 2024-10-28 17:10:00          68
-#> 2024-10-28 17:15:00          68
-#> 2024-10-28 17:20:00          68
-#> 2024-10-28 17:25:00          68
 #> 2024-10-28 17:30:00          68
 #> 2024-10-28 17:35:00          68
 #> 2024-10-28 17:40:00          68
 #> 2024-10-28 17:45:00          68
+#> 2024-10-28 17:50:00          68
+#> 2024-10-28 17:55:00          68
+#> 2024-10-28 18:00:00          68
+#> 2024-10-28 18:05:00          68
+#> 2024-10-28 18:10:00          68
+#> 2024-10-28 18:15:00          68
 #>                 ...            
-#> 2024-12-26 16:10:00          85
-#> 2024-12-26 16:15:00          85
-#> 2024-12-26 16:20:00          85
-#> 2024-12-26 16:25:00          85
-#> 2024-12-26 16:30:00          85
-#> 2024-12-26 16:35:00          85
 #> 2024-12-26 16:40:00          85
 #> 2024-12-26 16:45:00          85
 #> 2024-12-26 16:50:00          85
 #> 2024-12-26 16:55:00          85
+#> 2024-12-26 17:00:00          85
+#> 2024-12-26 17:05:00          85
+#> 2024-12-26 17:10:00          85
+#> 2024-12-26 17:15:00          85
+#> 2024-12-26 17:20:00          85
+#> 2024-12-26 17:25:00          85
 
 class(meas)
 #> [1] "xts" "zoo"

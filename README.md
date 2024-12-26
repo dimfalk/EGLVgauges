@@ -27,7 +27,7 @@ Just a few quick insights on the use of this package:
 
 ``` r
 library(EGLVgauges)
-#> 0.1.13
+#> 0.2.2
 
 # fetch all available gauges
 gauges <- get_gauges()
@@ -77,34 +77,44 @@ gauge
 
 
 
+# fetch metadata available
+get_meta(gauge)
+#> # A tibble: 1 × 9
+#>   id    name        waterbody municipality      X      Y river_km catchment_area
+#>   <chr> <chr>       <chr>     <chr>         <dbl>  <dbl>    <dbl>          <dbl>
+#> 1 10119 Adenaueral… Emscher   Gelsenkirch… 3.67e5 5.71e6     36.4           481.
+#> # ℹ 1 more variable: level_zero <dbl>
+
+
+
 # fetch water level measurements
 meas <- get_measurements(gauge)[[1]]
 meas
 #> Warning: object timezone ('etc/GMT-1') is different from system timezone ('')
 #>   NOTE: set 'options(xts_check_TZ = FALSE)' to disable this warning
 #>     This note is displayed once per session
-#>                     waterlevel
-#> 2024-10-09 22:35:00        246
-#> 2024-10-09 22:40:00        251
-#> 2024-10-09 22:45:00        258
-#> 2024-10-09 22:50:00        264
-#> 2024-10-09 22:55:00        268
-#> 2024-10-09 23:00:00        275
-#> 2024-10-09 23:05:00        279
-#> 2024-10-09 23:10:00        286
-#> 2024-10-09 23:15:00        292
-#> 2024-10-09 23:20:00        296
-#>                 ...           
-#> 2024-12-07 21:45:00        114
-#> 2024-12-07 21:50:00        114
-#> 2024-12-07 21:55:00        114
-#> 2024-12-07 22:00:00        114
-#> 2024-12-07 22:05:00        114
-#> 2024-12-07 22:10:00        114
-#> 2024-12-07 22:15:00        113
-#> 2024-12-07 22:20:00        113
-#> 2024-12-07 22:25:00        113
-#> 2024-12-07 22:30:00        113
+#>                     Wasserstand
+#> 2024-10-28 10:55:00          73
+#> 2024-10-28 11:00:00          73
+#> 2024-10-28 11:05:00          72
+#> 2024-10-28 11:10:00          72
+#> 2024-10-28 11:15:00          72
+#> 2024-10-28 11:20:00          72
+#> 2024-10-28 11:25:00          72
+#> 2024-10-28 11:30:00          72
+#> 2024-10-28 11:35:00          72
+#> 2024-10-28 11:40:00          72
+#>                 ...            
+#> 2024-12-26 10:05:00          89
+#> 2024-12-26 10:10:00          89
+#> 2024-12-26 10:15:00          89
+#> 2024-12-26 10:20:00          89
+#> 2024-12-26 10:25:00          89
+#> 2024-12-26 10:30:00          88
+#> 2024-12-26 10:35:00          88
+#> 2024-12-26 10:40:00          88
+#> 2024-12-26 10:45:00          88
+#> 2024-12-26 10:50:00          88
 
 class(meas)
 #> [1] "xts" "zoo"
@@ -113,16 +123,3 @@ plot(meas, main = "10119 Adenauerallee", ylab = "Water level [cm]")
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
-
-``` r
-
-
-
-# fetch metadata available
-get_meta(gauge)
-#> # A tibble: 1 × 9
-#>   id    name        waterbody municipality      X      Y river_km catchment_area
-#>   <chr> <chr>       <chr>     <chr>         <dbl>  <dbl>    <dbl>          <dbl>
-#> 1 10119 Adenaueral… Emscher   Gelsenkirch… 3.67e5 5.71e6     36.4           481.
-#> # ℹ 1 more variable: level_zero <dbl>
-```

@@ -48,6 +48,11 @@ gauge
 
 
 
+# fetch metadata available
+get_meta(gauge)
+
+
+
 # fetch water level measurements
 meas <- get_measurements(gauge)[[1]]
 meas
@@ -55,9 +60,4 @@ meas
 class(meas)
 
 plot(meas, main = "10119 Adenauerallee", ylab = "Water level [cm]")
-
-
-
-# fetch metadata available
-get_meta(gauge)
 ```

@@ -8,6 +8,16 @@ library(httptest)
 #   httr::GET("https://pegel.eglv.de/gauges/")
 # })
 
+# `get_meta()` -----------------------------------------------------------------
+# capture_requests({
+#
+#   httr::GET("https://pegel.eglv.de/Stammdaten/10103/")
+#
+#   httr::GET("https://pegel.eglv.de/Stammdaten/20017/")
+#
+#   httr::GET("https://pegel.eglv.de/Stammdaten/20020/")
+# })
+
 # `get_measurements()` ---------------------------------------------------------
 # capture_requests({
 #
@@ -18,16 +28,6 @@ library(httptest)
 #   httr::GET("https://pegel.eglv.de/measurements/", query = list("serial" = "20017", "unit_name" = "Wasserstand"))
 #
 #   httr::GET("https://pegel.eglv.de/measurements/", query = list("serial" = "20020", "unit_name" = "Wasserstand"))
-# })
-
-# `get_meta()` -----------------------------------------------------------------
-# capture_requests({
-#
-#   httr::GET("https://pegel.eglv.de/Stammdaten/10103/")
-#
-#   httr::GET("https://pegel.eglv.de/Stammdaten/20017/")
-#
-#   httr::GET("https://pegel.eglv.de/Stammdaten/20020/")
 # })
 
 

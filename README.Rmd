@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![Codecov](https://codecov.io/gh/dimfalk/EGLVgauges/branch/main/graph/badge.svg)](https://codecov.io/gh/dimfalk/EGLVgauges)
 <!-- badges: end -->
 
-EGLVgauges aims to grant easy access to EGLV gauge data published at [pegel.eglv.de](https://pegel.eglv.de/).
+EGLVgauges aims to grant easy access to EGLV gauge data and metadata published at [pegel.eglv.de](https://pegel.eglv.de/).
 
 ## Installation
 
@@ -31,28 +31,35 @@ You can install the development version of EGLVgauges with:
 devtools::install_github("dimfalk/EGLVgauges")
 ```
 
+and load the package via
+
+```{r}
+library(EGLVgauges)
+```
+
 ## Basic examples
 
-Just a few quick insights on the use of this package:
+### Get gauge metadata and latest measurements
 
-```{r example}
-library(EGLVgauges)
-
+```{r}
 # fetch all available gauges
 gauges <- get_gauges()
 gauges
 
-# eventually filter the dataset to the ones you're interested in
+# ... eventually filter the dataset to the objects you're interested in
 gauge <- gauges |> dplyr::filter(id == "10119")
 gauge
+```
 
+### Get (extended) metadata for specific gauge
 
-
-# fetch metadata available
+```{r}
 get_meta(gauge)
+```
 
+### Get available measurements for specific gauge
 
-
+```{r}
 # fetch water level measurements
 meas <- get_measurements(gauge)[[1]]
 meas

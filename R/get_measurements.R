@@ -9,6 +9,7 @@
 #' @seealso [get_gauges()]
 #'
 #' @examples
+#' \dontrun{
 #' gauge <- get_gauges() |> dplyr::filter(id == "10103")
 #'
 #' get_measurements(gauge)
@@ -17,6 +18,7 @@
 #' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 #'
 #' get_measurements(gauges)
+#' }
 get_measurements <- function(x = NULL,
                              discharge = FALSE) {
 

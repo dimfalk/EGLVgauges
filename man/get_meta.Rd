@@ -16,11 +16,13 @@ Tibble.
 Get gauge metadata
 }
 \examples{
+\dontrun{
 gauge <- get_gauges() |> dplyr::filter(id == "10103")
 get_meta(gauge)
 
 gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 get_meta(gauges)
+}
 }
 \seealso{
 \code{\link[=get_gauges]{get_gauges()}}

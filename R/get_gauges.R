@@ -4,7 +4,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' get_gauges()
+#' }
 get_gauges <- function() {
 
   # debugging ------------------------------------------------------------------

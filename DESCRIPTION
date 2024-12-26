@@ -1,10 +1,10 @@
 Package: EGLVgauges
 Title: R Interface for data acquisition from pegel.eglv.de
-Version: 0.2.3
+Version: 0.2.4
 Date: 2024-12-26
 Authors@R: 
     person("Dimitri", "Falk", , "falk.dimitri@eglv.de", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Grants easy access to EGLV gauge data and metadata.
 License: AGPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

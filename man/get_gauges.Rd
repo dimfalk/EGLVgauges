@@ -13,5 +13,7 @@ Sf object.
 Get gauge locations
 }
 \examples{
+\dontrun{
 get_gauges()
+}
 }

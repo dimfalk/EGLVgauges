@@ -18,6 +18,7 @@ List of xts objects.
 Get water level or discharge measurements
 }
 \examples{
+\dontrun{
 gauge <- get_gauges() |> dplyr::filter(id == "10103")
 
 get_measurements(gauge)
@@ -26,6 +27,7 @@ get_measurements(gauge, discharge = TRUE)
 gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
 
 get_measurements(gauges)
+}
 }
 \seealso{
 \code{\link[=get_gauges]{get_gauges()}}

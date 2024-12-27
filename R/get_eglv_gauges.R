@@ -5,9 +5,9 @@
 #'
 #' @examples
 #' \dontrun{
-#' get_gauges()
+#' get_eglv_gauges()
 #' }
-get_gauges <- function() {
+get_eglv_gauges <- function() {
 
   # debugging ------------------------------------------------------------------
 

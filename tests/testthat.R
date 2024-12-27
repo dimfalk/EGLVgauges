@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(EGLVgauges)
+library(NRWgauges)
 
-test_check("EGLVgauges")
+test_check("NRWgauges")

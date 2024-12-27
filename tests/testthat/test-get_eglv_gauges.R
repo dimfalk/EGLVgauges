@@ -2,14 +2,14 @@ with_mock_api({
 
   test_that("Output class is as expected.", {
 
-    x <- get_gauges()
+    x <- get_eglv_gauges()
 
     expect_s3_class(x, c("sf", "tbl_df", "tbl", "data.frame"))
   })
 
   test_that("Dimensions are as expected.", {
 
-    x <- get_gauges()
+    x <- get_eglv_gauges()
 
     expect_equal(dim(x), c(112, 13))
   })
@@ -27,7 +27,7 @@ with_mock_api({
                 "latest_discharge_current_alertlevel",
                 "geometry")
 
-    x <- get_gauges()
+    x <- get_eglv_gauges()
 
     expect_equal(colnames(x), cnames)
   })
@@ -39,7 +39,7 @@ with_mock_api({
                "logical", "double", "double", "logical",
                "list")
 
-    x <- get_gauges()
+    x <- get_eglv_gauges()
 
     x_dtype <- lapply(x, typeof) |> unlist() |> as.character()
 

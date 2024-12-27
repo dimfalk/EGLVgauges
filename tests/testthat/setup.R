@@ -2,13 +2,13 @@
 
 library(httptest)
 
-# `get_gauges()` ---------------------------------------------------------------
+# `get_eglv_gauges()` ---------------------------------------------------------------
 # capture_requests({
 #
 #   httr::GET("https://pegel.eglv.de/gauges/")
 # })
 
-# `get_meta()` -----------------------------------------------------------------
+# `get_eglv_meta()` -----------------------------------------------------------------
 # capture_requests({
 #
 #   httr::GET("https://pegel.eglv.de/Stammdaten/10103/")
@@ -18,7 +18,7 @@ library(httptest)
 #   httr::GET("https://pegel.eglv.de/Stammdaten/20020/")
 # })
 
-# `get_measurements()` ---------------------------------------------------------
+# `get_eglv_measurements()` ---------------------------------------------------------
 # capture_requests({
 #
 #   httr::GET("https://pegel.eglv.de/measurements/", query = list("serial" = "10103", "unit_name" = "Wasserstand"))

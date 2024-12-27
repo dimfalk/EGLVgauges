@@ -1,26 +1,26 @@
 #' Get (extended) metadata for selected gauges
 #'
 #' @param x Sf object containing gauges to be used for subsequent queries,
-#'     as provided by `get_gauges()`.
+#'     as provided by `get_eglv_gauges()`.
 #'
 #' @return Tibble containing metadata.
 #' @export
 #'
-#' @seealso [get_gauges()]
+#' @seealso [get_eglv_gauges()]
 #'
 #' @examples
 #' \dontrun{
-#' gauge <- get_gauges() |> dplyr::filter(id == "10103")
-#' get_meta(gauge)
+#' gauge <- get_eglv_gauges() |> dplyr::filter(id == "10103")
+#' get_eglv_meta(gauge)
 #'
-#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
-#' get_meta(gauges)
+#' gauges <- get_eglv_gauges() |> dplyr::filter(waterbody == "Hammbach")
+#' get_eglv_meta(gauges)
 #' }
-get_meta <- function(x = NULL) {
+get_eglv_meta <- function(x = NULL) {
 
   # debugging ------------------------------------------------------------------
 
-  # x <- get_gauges() |> dplyr::filter(id == "10103")
+  # x <- get_eglv_gauges() |> dplyr::filter(id == "10103")
 
   # check arguments ------------------------------------------------------------
 

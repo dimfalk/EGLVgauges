@@ -1,10 +1,11 @@
-Package: EGLVgauges
-Title: Web-scraping EGLV gauge (meta-)data
-Version: 0.2.5
-Date: 2024-12-26
+Package: NRWgauges
+Title: Web-scraping gauge (meta-)data from various providers in NRW, Germany
+Version: 0.3.0
+Date: 2024-12-27
 Authors@R: 
     person("Dimitri", "Falk", , "falk.dimitri@eglv.de", role = c("aut", "cre"))
-Description: Granting easy access to gauge (meta-)data published at pegel.eglv.de.
+Description: Granting easy access to gauge (meta-)data published on distributed
+    web-based platforms by various water management associations.
 License: AGPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -26,5 +27,3 @@ Suggests:
     httptest,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-LazyData: true
-LazyDataCompression: bzip2

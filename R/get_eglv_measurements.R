@@ -1,31 +1,31 @@
 #' Get water level or discharge measurements for selected gauges
 #'
 #' @param x Sf object containing gauges to be used for subsequent queries,
-#'     as provided by `get_gauges()`.
+#'     as provided by `get_eglv_gauges()`.
 #' @param discharge logical. Retrieve water level or discharge data?
 #'
 #' @return List of xts objects.
 #' @export
 #'
-#' @seealso [get_gauges()]
+#' @seealso [get_eglv_gauges()]
 #'
 #' @examples
 #' \dontrun{
-#' gauge <- get_gauges() |> dplyr::filter(id == "10103")
+#' gauge <- get_eglv_gauges() |> dplyr::filter(id == "10103")
 #'
-#' get_measurements(gauge)
-#' get_measurements(gauge, discharge = TRUE)
+#' get_eglv_measurements(gauge)
+#' get_eglv_measurements(gauge, discharge = TRUE)
 #'
-#' gauges <- get_gauges() |> dplyr::filter(waterbody == "Hammbach")
+#' gauges <- get_eglv_gauges() |> dplyr::filter(waterbody == "Hammbach")
 #'
-#' get_measurements(gauges)
+#' get_eglv_measurements(gauges)
 #' }
-get_measurements <- function(x = NULL,
+get_eglv_measurements <- function(x = NULL,
                              discharge = FALSE) {
 
   # debugging ------------------------------------------------------------------
 
-  # x <- get_gauges() |> dplyr::filter(id == "10103")
+  # x <- get_eglv_gauges() |> dplyr::filter(id == "10103")
   # discharge <- FALSE
 
   # check arguments ------------------------------------------------------------
@@ -78,7 +78,7 @@ get_measurements <- function(x = NULL,
     names(meas) <- par
 
     # add meta data
-    meta <- get_meta(x[i, ])
+    meta <- get_eglv_meta(x[i, ])
 
     attr(meas, "STAT_ID") <- meta |> dplyr::pull("id")
     attr(meas, "STAT_NAME") <- meta |> dplyr::pull("name")

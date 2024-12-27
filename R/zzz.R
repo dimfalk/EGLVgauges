@@ -1,6 +1,6 @@
 .onAttach <- function(libname, pkgname) {
 
-  pkg <- "EGLVgauges"
+  pkg <- "NRWgauges"
 
   utils::packageVersion(pkg) |> packageStartupMessage()
 }

@@ -1,40 +1,45 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# EGLVgauges
+# NRWgauges
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dimfalk/EGLVgauges/actions/workflows/R-CMD-check.yaml)
-[![codecov](https://codecov.io/gh/dimfalk/EGLVgauges/branch/main/graph/badge.svg?token=3JJOI51OT8)](https://codecov.io/gh/dimfalk/EGLVgauges)
+[![R-CMD-check](https://github.com/dimfalk/NRWgauges/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/dimfalk/NRWgauges/actions/workflows/R-CMD-check.yaml)
+[![codecov](https://codecov.io/gh/dimfalk/NRWgauges/branch/main/graph/badge.svg?token=3JJOI51OT8)](https://codecov.io/gh/dimfalk/NRWgauges)
 <!-- badges: end -->
 
-EGLVgauges aims to grant easy access to EGLV gauge data and metadata
-published at [pegel.eglv.de](https://pegel.eglv.de/).
+NRWgauges aims to grant easy access to gauge (meta-)data published on
+distributed web-based platforms by various water management associations
+in North Rhine-Westphalia, Germany.
+
+As of today, the following platforms can be harvested:
+
+- pegel.eglv.de (Emschergenossenschaft / Lippeverband)
 
 ## Installation
 
-You can install the development version of EGLVgauges with:
+You can install the development version of NRWgauges with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("dimfalk/EGLVgauges")
+devtools::install_github("dimfalk/NRWgauges")
 ```
 
 and load the package via
 
 ``` r
-library(EGLVgauges)
-#> 0.2.5
+library(NRWgauges)
+#> 0.3.0
 ```
 
-## Basic examples
+## Basic example: EGLV
 
 ### Get gauge metadata, locations and latest measurements
 
 ``` r
 # fetch all available gauges
-gauges <- get_gauges()
+gauges <- get_eglv_gauges()
 gauges
 #> Simple feature collection with 112 features and 12 fields
 #> Geometry type: POINT
@@ -83,7 +88,7 @@ gauge
 ### Get (extended) metadata for selected gauges
 
 ``` r
-get_meta(gauge)
+get_eglv_meta(gauge)
 #> # A tibble: 1 × 9
 #>   id    name        waterbody municipality      X      Y river_km catchment_area
 #>   <chr> <chr>       <chr>     <chr>         <dbl>  <dbl>    <dbl>          <dbl>
@@ -95,33 +100,33 @@ get_meta(gauge)
 
 ``` r
 # fetch water level measurements
-meas <- get_measurements(gauge)[[1]]
+meas <- get_eglv_measurements(gauge)[[1]]
 meas
 #> Warning: object timezone ('etc/GMT-1') is different from system timezone ('')
 #>   NOTE: set 'options(xts_check_TZ = FALSE)' to disable this warning
 #>     This note is displayed once per session
 #>                     Wasserstand
-#> 2024-10-28 21:20:00          68
-#> 2024-10-28 21:25:00          68
-#> 2024-10-28 21:30:00          68
-#> 2024-10-28 21:35:00          68
-#> 2024-10-28 21:40:00          68
-#> 2024-10-28 21:45:00          68
-#> 2024-10-28 21:50:00          69
-#> 2024-10-28 21:55:00          69
-#> 2024-10-28 22:00:00          69
-#> 2024-10-28 22:05:00          69
+#> 2024-10-29 12:20:00          75
+#> 2024-10-29 12:25:00          75
+#> 2024-10-29 12:30:00          75
+#> 2024-10-29 12:35:00          75
+#> 2024-10-29 12:40:00          75
+#> 2024-10-29 12:45:00          75
+#> 2024-10-29 12:50:00          75
+#> 2024-10-29 12:55:00          75
+#> 2024-10-29 13:00:00          75
+#> 2024-10-29 13:05:00          75
 #>                 ...            
-#> 2024-12-26 20:30:00          85
-#> 2024-12-26 20:35:00          85
-#> 2024-12-26 20:40:00          86
-#> 2024-12-26 20:45:00          86
-#> 2024-12-26 20:50:00          86
-#> 2024-12-26 20:55:00          86
-#> 2024-12-26 21:00:00          86
-#> 2024-12-26 21:05:00          86
-#> 2024-12-26 21:10:00          86
-#> 2024-12-26 21:15:00          86
+#> 2024-12-27 11:25:00          85
+#> 2024-12-27 11:30:00          85
+#> 2024-12-27 11:35:00          84
+#> 2024-12-27 11:40:00          84
+#> 2024-12-27 11:45:00          84
+#> 2024-12-27 11:50:00          84
+#> 2024-12-27 11:55:00          84
+#> 2024-12-27 12:00:00          84
+#> 2024-12-27 12:05:00          84
+#> 2024-12-27 12:10:00          84
 
 class(meas)
 #> [1] "xts" "zoo"

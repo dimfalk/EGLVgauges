@@ -30,7 +30,7 @@ and load the package via
 
 ``` r
 library(NRWgauges)
-#> 0.3.0
+#> 0.3.4
 ```
 
 ## Basic example: EGLV
@@ -89,11 +89,11 @@ gauge
 
 ``` r
 get_eglv_meta(gauge)
-#> # A tibble: 1 × 9
-#>   id    name        waterbody municipality      X      Y river_km catchment_area
-#>   <chr> <chr>       <chr>     <chr>         <dbl>  <dbl>    <dbl>          <dbl>
-#> 1 10119 Adenaueral… Emscher   Gelsenkirch… 3.67e5 5.71e6     36.4           481.
-#> # ℹ 1 more variable: level_zero <dbl>
+#> # A tibble: 1 × 10
+#>   id    name          operator waterbody municipality        X        Y river_km
+#>   <chr> <chr>         <chr>    <chr>     <chr>           <dbl>    <dbl>    <dbl>
+#> 1 10119 Adenauerallee EG       Emscher   Gelsenkirchen 367060. 5712147.     36.4
+#> # ℹ 2 more variables: catchment_area <dbl>, level_zero <dbl>
 ```
 
 ### Get available measurements for selected gauges
@@ -102,31 +102,28 @@ get_eglv_meta(gauge)
 # fetch water level measurements
 meas <- get_eglv_measurements(gauge)[[1]]
 meas
-#> Warning: object timezone ('etc/GMT-1') is different from system timezone ('')
-#>   NOTE: set 'options(xts_check_TZ = FALSE)' to disable this warning
-#>     This note is displayed once per session
 #>                     Wasserstand
-#> 2024-10-29 12:20:00          75
-#> 2024-10-29 12:25:00          75
-#> 2024-10-29 12:30:00          75
-#> 2024-10-29 12:35:00          75
-#> 2024-10-29 12:40:00          75
-#> 2024-10-29 12:45:00          75
-#> 2024-10-29 12:50:00          75
-#> 2024-10-29 12:55:00          75
-#> 2024-10-29 13:00:00          75
-#> 2024-10-29 13:05:00          75
+#> 2024-10-29 20:25:00          86
+#> 2024-10-29 20:30:00          86
+#> 2024-10-29 20:35:00          86
+#> 2024-10-29 20:40:00          86
+#> 2024-10-29 20:45:00          86
+#> 2024-10-29 20:50:00          86
+#> 2024-10-29 20:55:00          86
+#> 2024-10-29 21:00:00          86
+#> 2024-10-29 21:05:00          86
+#> 2024-10-29 21:10:00          86
 #>                 ...            
-#> 2024-12-27 11:25:00          85
-#> 2024-12-27 11:30:00          85
-#> 2024-12-27 11:35:00          84
-#> 2024-12-27 11:40:00          84
-#> 2024-12-27 11:45:00          84
-#> 2024-12-27 11:50:00          84
-#> 2024-12-27 11:55:00          84
-#> 2024-12-27 12:00:00          84
-#> 2024-12-27 12:05:00          84
-#> 2024-12-27 12:10:00          84
+#> 2024-12-27 19:30:00          83
+#> 2024-12-27 19:35:00          83
+#> 2024-12-27 19:40:00          83
+#> 2024-12-27 19:45:00          83
+#> 2024-12-27 19:50:00          83
+#> 2024-12-27 19:55:00          83
+#> 2024-12-27 20:00:00          83
+#> 2024-12-27 20:05:00          83
+#> 2024-12-27 20:10:00          83
+#> 2024-12-27 20:15:00          83
 
 class(meas)
 #> [1] "xts" "zoo"

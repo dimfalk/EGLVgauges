@@ -36,6 +36,9 @@ get_eglv_measurements <- function(x = NULL,
 
   # ----------------------------------------------------------------------------
 
+  # init object to be returned
+  xtslist <- list()
+
   base_url <- "https://pegel.eglv.de/measurements/"
 
   # set relevant parameter
@@ -48,12 +51,18 @@ get_eglv_measurements <- function(x = NULL,
     par <- "Wasserstand"
   }
 
-  # iterate over individual stations
+  # iterate over individual stations, initialize progress bar
   ids <- x[["id"]]
 
   n <- length(ids)
 
-  xtslist <- list()
+  pb <- progress::progress_bar$new(format = "(:spin) [:bar] :percent || Iteration: :current/:total || Elapsed time: :elapsedfull",
+                                   total = n,
+                                   complete = "#",
+                                   incomplete = "-",
+                                   current = ">",
+                                   clear = FALSE,
+                                   width = 100)
 
   for (i in 1:n) {
 
@@ -106,6 +115,8 @@ get_eglv_measurements <- function(x = NULL,
     xtslist[[i]] <- meas
 
     Sys.sleep(0.5)
+
+    pb$tick()
   }
 
   names(xtslist) <- ids

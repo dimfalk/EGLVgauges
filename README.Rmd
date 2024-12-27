@@ -63,7 +63,7 @@ get_eglv_meta(gauge)
 
 ### Get available measurements for selected gauges
 
-```{r}
+```{r, warning = FALSE}
 # fetch water level measurements
 meas <- get_eglv_measurements(gauge)[[1]]
 meas

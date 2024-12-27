@@ -28,8 +28,7 @@ get_eglv_meta <- function(x = NULL) {
 
   # ----------------------------------------------------------------------------
 
-  base_url <- "https://pegel.eglv.de/Stammdaten/"
-
+  # init object to be returned
   meta <- data.frame("id" = NA,
                      "name" = NA,
                      "operator" = NA,
@@ -41,10 +40,20 @@ get_eglv_meta <- function(x = NULL) {
                      "catchment_area" = NA,
                      "level_zero" = NA)
 
-  # iterate over individual stations
+  base_url <- "https://pegel.eglv.de/Stammdaten/"
+
+  # iterate over individual stations, initialize progress bar
   ids <- x[["id"]]
 
   n <- length(ids)
+
+  pb <- progress::progress_bar$new(format = "(:spin) [:bar] :percent || Iteration: :current/:total || Elapsed time: :elapsedfull",
+                                   total = n,
+                                   complete = "#",
+                                   incomplete = "-",
+                                   current = ">",
+                                   clear = FALSE,
+                                   width = 100)
 
   for (i in 1:n) {
 
@@ -54,7 +63,7 @@ get_eglv_meta <- function(x = NULL) {
     r_raw <- httr::GET(url)
 
     # parse response: html to text
-    a <-  rvest::read_html(r_raw) |>
+    a <- rvest::read_html(r_raw) |>
       rvest::html_elements("li") |>
       rvest::html_text()
 
@@ -84,6 +93,8 @@ get_eglv_meta <- function(x = NULL) {
     }
 
     Sys.sleep(0.5)
+
+    pb$tick()
   }
 
   meta_all

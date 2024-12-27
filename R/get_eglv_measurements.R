@@ -58,8 +58,8 @@ get_eglv_measurements <- function(x = NULL,
   for (i in 1:n) {
 
     # query definition
-    query <- list(serial = ids[i],
-                  unit_name = par)
+    query <- list("serial" = ids[i],
+                  "unit_name" = par)
 
     # send request
     r_raw <- httr::GET(base_url, query = query)

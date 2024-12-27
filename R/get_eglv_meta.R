@@ -32,6 +32,7 @@ get_eglv_meta <- function(x = NULL) {
 
   meta <- data.frame("id" = NA,
                      "name" = NA,
+                     "operator" = NA,
                      "waterbody" = NA,
                      "municipality" = NA,
                      "X" = NA,
@@ -63,6 +64,7 @@ get_eglv_meta <- function(x = NULL) {
 
     meta["id"] <- vals[2]
     meta["name"] <- vals[1]
+    meta["operator"] <- ifelse(as.numeric(vals[2]) > 20000, "LV", "EG")
     meta["waterbody"] <- vals[3]
     meta["municipality"] <- vals[4]
     meta["X"] <- vals[5] |> stringr::str_replace(pattern = ",", replacement = ".") |> as.numeric()

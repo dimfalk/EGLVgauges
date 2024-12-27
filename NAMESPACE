@@ -3,3 +3,4 @@
 export(get_eglv_gauges)
 export(get_eglv_measurements)
 export(get_eglv_meta)
+export(get_rv_meta)

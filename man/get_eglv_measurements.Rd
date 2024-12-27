@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_eglv_measurements.R
 \name{get_eglv_measurements}
 \alias{get_eglv_measurements}
-\title{Get water level or discharge measurements for selected gauges}
+\title{Get water level or discharge measurements for selected EGLV gauges}
 \usage{
 get_eglv_measurements(x = NULL, discharge = FALSE)
 }
@@ -16,7 +16,7 @@ as provided by \code{get_eglv_gauges()}.}
 List of xts objects.
 }
 \description{
-Get water level or discharge measurements for selected gauges
+Get water level or discharge measurements for selected EGLV gauges
 }
 \examples{
 \dontrun{

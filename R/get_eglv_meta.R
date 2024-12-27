@@ -1,4 +1,4 @@
-#' Get (extended) metadata for selected gauges
+#' Get (extended) metadata for selected EGLV gauges
 #'
 #' @param x Sf object containing gauges to be used for subsequent queries,
 #'     as provided by `get_eglv_gauges()`.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_eglv_gauges.R
 \name{get_eglv_gauges}
 \alias{get_eglv_gauges}
-\title{Get gauge metadata (simplified), locations and latest measurements}
+\title{Get EGLV gauge metadata (simplified), locations and latest measurements}
 \usage{
 get_eglv_gauges()
 }
@@ -10,7 +10,7 @@ get_eglv_gauges()
 Sf object.
 }
 \description{
-Get gauge metadata (simplified), locations and latest measurements
+Get EGLV gauge metadata (simplified), locations and latest measurements
 }
 \examples{
 \dontrun{

@@ -1,4 +1,4 @@
-#' Get water level or discharge measurements for selected gauges
+#' Get water level or discharge measurements for selected EGLV gauges
 #'
 #' @param x Sf object containing gauges to be used for subsequent queries,
 #'     as provided by `get_eglv_gauges()`.

@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_eglv_meta.R
 \name{get_eglv_meta}
 \alias{get_eglv_meta}
-\title{Get (extended) metadata for selected gauges}
+\title{Get (extended) metadata for selected EGLV gauges}
 \usage{
 get_eglv_meta(x = NULL)
 }
@@ -14,7 +14,7 @@ as provided by \code{get_eglv_gauges()}.}
 Tibble containing metadata.
 }
 \description{
-Get (extended) metadata for selected gauges
+Get (extended) metadata for selected EGLV gauges
 }
 \examples{
 \dontrun{

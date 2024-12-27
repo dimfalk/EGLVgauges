@@ -1,4 +1,4 @@
-#' Get gauge metadata (simplified), locations and latest measurements
+#' Get EGLV gauge metadata (simplified), locations and latest measurements
 #'
 #' @return Sf object.
 #' @export
